@@ -1,0 +1,121 @@
+$header_fixed_color:#0A0F14;
+$header_font_color:#F1F1F1;
+
+$header_search_color:#333;
+$header_search_font_color:#666;
+
+$color_light_gray:#C7C7C7;
+$color_white:#fff;
+
+header {
+    min-width: 1920px;
+    position: fixed;              
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
+    //background-color: $header_fixed_color;
+    color: $header_font_color;
+    z-index: 100;
+    // 로고
+    .main_logo {
+        a {
+            display: block;            
+        }
+    }
+    
+    // 네비게이션 메뉴
+    nav {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        .product {
+            display: flex;
+            gap: 40px;
+            li {
+                a {
+                    color: $header_font_color;
+                    font-size: 16px;
+                    font-weight: 500;
+                    &:hover {
+                        color: $color_light_gray;
+                    }
+                }
+            }
+        }
+    }
+
+    // 헤더 우측 메뉴
+    .right_menu {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        // 검색창
+        .search_box {
+            position: relative;
+            display: flex;
+            align-items: center;
+            background-color: $header_search_color;            
+            border-radius: 20px;
+            padding: 10px 20px;
+
+            form {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                img {
+                    width: 20px;
+                    height: 20px;
+                    cursor: pointer;
+                }
+                .search {
+                    &:hover {
+                        opacity: 0.5;
+                    }
+                }
+                .close {
+                    &:hover {
+                        opacity: 0.5;
+                    }
+                }
+                .search_input {
+                    input {                        
+                        color: $header_font_color;
+                        background-color: $header_search_color;
+                        font-size: 14px;
+
+                        &::placeholder {
+                            font-size: 14px;
+                            color: $header_search_font_color;
+                        }
+                    }
+                }
+            }            
+        }
+
+        // 로그인/회원가입/장바구니 아이콘
+        .user_menu {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            li {
+                a {
+                    display: block;
+                    img {
+                        width: 22px;
+                        height: 22px;
+                    }
+
+                    &:hover img {
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }
+}

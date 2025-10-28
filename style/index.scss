@@ -1,0 +1,67 @@
+@use './common.scss' as *;
+
+main {   
+    min-width: 1920px;
+    #main_banner {
+        width: 100%;
+        height: 100vh;
+        margin-top: 0; 
+        #banner_slide {
+            width: 100%;
+            height: 100%;
+
+            .swiper-wrapper {
+                width: 100%;
+                height: 100%;
+
+                .swiper-slide {                   
+                    width: 100%;
+                    height: 100%;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+
+                    &.slide1 { background-image: url(../images/main_banner1.jpg); }
+                    &.slide2 { background-image: url(../images/main_banner2.png); }
+                    &.slide3 { background-image: url(../images/main_banner3.png); }
+
+                    a {
+                        padding : 0 120px; 
+                        display: flex;  
+                        justify-content: left;
+                        align-items: center;
+                        width: 100%;
+                        height: 100%;
+                        .banner_text {
+                            text-align:left;
+                            h3 {
+                                font-size: 45px;
+                                font-weight: 700;
+                                line-height: 150%;
+                                margin-bottom: 20px;
+                                color: $color_white;
+                            }
+                            p {
+                                font-size: 18px;
+                                line-height: 150%;
+                                color: $color_white;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .swiper-button-prev,
+            .swiper-button-next {                
+            }
+
+            .swiper-button-prev {
+                left: 60px; // 왼쪽 여백
+            }
+
+            .swiper-button-next {
+                right: 60px; // 오른쪽 여백
+            }
+        }
+    }
+}

@@ -1,11 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="keywords" content="블랙야크">
+    <link rel="shortcut icon" href="./images/logo_white.png" type="image/x-icon">
+    <title>BLACKYAK</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/main.css">
 </head>
+
 <body>
-    
+    <header>        
+        <!-- 헤더 로고 -->
+        <h1 class="mainlogo">
+            <a href="./index.html">
+                <img src="./images/logo_white.png" alt="BLACKYAK">
+            </a>
+        </h1>
+        <!-- 헤더 메뉴 -->
+        <nav>
+            <ul class="product">
+                <li><a href="#">BEST</a></li>
+                <li><a href="#">NEW</a></li>
+                <li><a href="#">남성</a></li>
+                <li><a href="#">여성</a></li>
+                <li><a href="#">신발</a></li>
+                <li><a href="#">용품</a></li>
+                <li><a href="#">컬렉션</a></li>
+            </ul>
+        </nav>
+        <!-- 헤더 우측 메뉴 -->
+        <div class="right_menu">
+            <!-- 헤더 우측메뉴 검색 -->
+            <div class="search_box active">
+                <form action="#">
+                    <img class="search" src="./images/search.png">
+                    <div class="search_input">
+                        <input type="text" name="search_str" id="search_str" placeholder="검색어를 입력해주세요">
+                    </div>
+                    <img class="close" src="./images/close.png">
+                </form>
+            </div>
+            <!-- 헤더 우측 아이콘3개 -->
+            <ul class="user_menu">
+                <li class="login_icon"><a href="#"><img src="./images/login.png" alt=""></a></li>
+                <li class="join_icon"><a href="#"><img src="./images/join.png" alt=""></a></li>
+                <li class="cart_icon"><a href="#"><img src="./images/add_shopping_cart.png" alt=""></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- 메인 배너 -->
+        <section id="main_banner">
+            <!-- 스와이퍼 추가 -->
+            <div class="swiper" id="banner_slide"><!-- 슬라이드 -->                
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1"><!-- 배경으로 ./images/main_banner1.jpg-->
+                        <a href="#">
+                            <div class="banner_text">
+                                <h3>겨울을 다르게 입다<br>HIMA DOWN</h3>                                
+                                <p>특별 사은품 증정<br>2025. 10. 10 (FRI) ~ 10. 31(FRI)</p>
+                            </div>
+                        </a>                            
+                    </div>
+                    <div class="swiper-slide slide2"><!-- 배경으로 ./images/main_banner2.jpg-->
+                        <a href="#">
+                            <div class="banner_text">
+                                <h3>25F/W 컬렉션<br>에너지 가득한 아웃도어 라이프</h3>
+                                <p>가볍게, 컬러풀하게<br>블랙야크 with 노홍철</p>
+                            </div>
+                        </a>                            
+                    </div>
+                    <div class="swiper-slide slide3"><!-- 배경으로 ./images/main_banner3.jpg-->
+                        <a href="#">
+                            <div class="banner_text">
+                                <h3>경량패딩을 세로 입다<br>루클라 다운 LUKLA</h3>
+                                <p>세로 튜브 패턴의 슬림다운<br>아이유 TVCF 경량다운</p>
+                            </div>
+                        </a>                            
+                    </div>
+                </div>   
+                <!-- 슬라이드 이전 다음 버튼 -->     
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>                          
+            </div>
+            <!-- 배너 위 내용 -->
+            
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
 </html>
