@@ -4,7 +4,14 @@ window.addEventListener('scroll', () => {
     if (window.scrollY > 0)       header.classList.add('scroll');
     else                          header.classList.remove('scroll');
 });  
-/**********************************************/
+/***********메인 BEST ITEM 카테고리 버튼**********/
+const bestCatagory = document.querySelectorAll('.best_product button');
+bestCatagory.forEach((btn) => {
+    btn.addEventListener('click', () => {    
+    bestCatagory.forEach((i) => i.classList.remove('active'));    
+    btn.classList.add('active');
+    });
+});
 /****************헤더 베너 슬라이드***************/
 const yakMainBnr = new Swiper('#banner_slide',{
     autoplay:{delay:3000},

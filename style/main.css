@@ -177,6 +177,9 @@ main #best_item h3 {
 main #best_item {
   /* 카테고리 버튼 영역 */
 }
+main #best_item .category {
+  position: relative;
+}
 main #best_item .category .best_product {
   display: flex;
   justify-content: left;
@@ -196,77 +199,86 @@ main #best_item .category .best_product li button:hover, main #best_item .catego
   background: #333;
   color: #FFF;
 }
-main #best_item .category {
-  /* .best_item_controls {
-      background: red;
-      position: absolute;
-      width: 80px; height: 30px;
-      right: 20px;
-      top: 0px;
-      z-index: 100;
-      .best_item_controls {
-          position: absolute; width:80px; height:50px; right:0px; top: 0px;                   
-      } 
-      .swiper-button-next,
-      .swiper-button-prev {                
-
-          &:hover {
-
-          }
-      }
-      .swiper-button-prev svg, 
-      .swiper-button-next svg {display: none;}
-
-      .swiper-button-next::after,
-      .swiper-button-prev::after {                
-          background:url(https://cdn-icons-png.flaticon.com/128/2609/2609370.png) no-repeat center / 25px;
-          content:''; display:block; width:50px; height:50px; opacity:0.8;
-      }
-      .swiper-button-next::after{transform:scaleX(-1);}
-  } */
+main #best_item .category .best_item_controls {
+  position: absolute;
+  width: auto;
+  right: 0;
+  top: 25px;
+  z-index: 100;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+main #best_item .category .best_item_controls .swiper-button-next,
+main #best_item .category .best_item_controls .swiper-button-prev {
+  position: static;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+main #best_item .category .best_item_controls .swiper-button-next:hover,
+main #best_item .category .best_item_controls .swiper-button-prev:hover {
+  opacity: 0.8;
+}
+main #best_item .category .best_item_controls .swiper-button-prev svg,
+main #best_item .category .best_item_controls .swiper-button-next svg {
+  display: none;
+}
+main #best_item .category .best_item_controls .swiper-button-next::after,
+main #best_item .category .best_item_controls .swiper-button-prev::after {
+  background: url(https://cdn-icons-png.flaticon.com/128/2609/2609370.png) no-repeat center/25px;
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  opacity: 0.8;
+}
+main #best_item .category .best_item_controls .swiper-button-next::after {
+  transform: scaleX(-1);
 }
 main #best_item {
   /* 슬라이드 영역 */
 }
-main #best_item .swiper .swiper-wrapper {
+main #best_item .best_product_list .swiper .swiper-wrapper {
   display: flex;
 }
-main #best_item .swiper .swiper-slide a {
+main #best_item .best_product_list .swiper .swiper-slide a {
   display: block;
   overflow: hidden;
 }
-main #best_item .swiper .swiper-slide a img {
+main #best_item .best_product_list .swiper .swiper-slide a img {
   width: 100%;
 }
-main #best_item .swiper .swiper-slide .best_item_text {
+main #best_item .best_product_list .swiper .swiper-slide .item_text {
   margin-top: 15px;
   text-align: left;
 }
-main #best_item .swiper .swiper-slide .best_item_text h5 {
+main #best_item .best_product_list .swiper .swiper-slide .item_text h5 {
   font-size: 0.875rem;
   font-weight: 400;
   margin-bottom: 15px;
 }
-main #best_item .swiper .swiper-slide .best_item_text .price {
+main #best_item .best_product_list .swiper .swiper-slide .item_text .price {
   margin-bottom: 15px;
 }
-main #best_item .swiper .swiper-slide .best_item_text .price .dc_price {
+main #best_item .best_product_list .swiper .swiper-slide .item_text .price .dc_price {
   font-size: 0.813rem;
   font-weight: 500;
   margin-right: 5px;
 }
-main #best_item .swiper .swiper-slide .best_item_text .price .normal_price {
+main #best_item .best_product_list .swiper .swiper-slide .item_text .price .normal_price {
   font-size: 0.75rem;
   font-weight: 400;
   color: #B1B1B1;
   margin-right: 5px;
 }
-main #best_item .swiper .swiper-slide .best_item_text .price .dc_off {
+main #best_item .best_product_list .swiper .swiper-slide .item_text .price .dc_off {
   font-size: 0.813rem;
   font-weight: 400;
   color: #FF5C47;
 }
-main #best_item .swiper .swiper-slide .best_item_text .tag {
+main #best_item .best_product_list .swiper .swiper-slide .item_text .tag {
   font-size: 0.625rem;
   font-weight: 400;
   background-color: #EEE;
@@ -274,7 +286,7 @@ main #best_item .swiper .swiper-slide .best_item_text .tag {
   padding: 5px 10px;
   display: inline-block;
 }
-main #best_item .swiper {
+main #best_item .best_product_list .swiper {
   /* 좌우 버튼 */
 }
 

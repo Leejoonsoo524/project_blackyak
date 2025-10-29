@@ -75,8 +75,8 @@ main {
         }      
         /* 카테고리 버튼 영역 */
         .category{
+            position: relative;
             .best_product {
-
                 display: flex;
                 justify-content: left;
                 gap: 20px;
@@ -97,21 +97,24 @@ main {
                     }
                 }
             }
-            /* .best_item_controls {
-                background: red;
+            .best_item_controls {                
                 position: absolute;
-                width: 80px; height: 30px;
-                right: 20px;
-                top: 0px;
+                width: auto;
+                right: 0;
+                top: 25px;
                 z-index: 100;
-                .best_item_controls {
-                    position: absolute; width:80px; height:50px; right:0px; top: 0px;                   
-                } 
+                display: flex;
+                justify-content: flex-end; 
+                align-items: center;
+                gap: 20px;                
                 .swiper-button-next,
                 .swiper-button-prev {                
-                
+                position: static;
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
                     &:hover {
-                        
+                        opacity: 0.8;
                     }
                 }
                 .swiper-button-prev svg, 
@@ -120,54 +123,54 @@ main {
                 .swiper-button-next::after,
                 .swiper-button-prev::after {                
                     background:url(https://cdn-icons-png.flaticon.com/128/2609/2609370.png) no-repeat center / 25px;
-                    content:''; display:block; width:50px; height:50px; opacity:0.8;
+                    content:''; display:block; width:30px; height:30px; opacity:0.8;
                 }
                 .swiper-button-next::after{transform:scaleX(-1);}
-            } */
-
+            }
         }
         /* 슬라이드 영역 */
-        .swiper {
-            .swiper-wrapper {
-            display: flex;            
-            }
-            .swiper-slide {            
-                a {
-                    display: block;
-                    overflow: hidden;                           
-                    img {
-                    width: 100%;                
+        .best_product_list{
+            .swiper {
+                .swiper-wrapper {
+                display: flex;            
                 }
-            }
-            .best_item_text {
-                margin-top: 15px;
-                text-align: left;
-                h5 {
-                @include product_name_font;
-                margin-bottom: 15px;
-                }
-                .price {                    
-                    margin-bottom: 15px;        
-                    .dc_price {
-                        @include product_dcSell_font;                        
-                        margin-right: 5px;
-                    }            
-                    .normal_price {
-                        @include product_normalSell_font;                        
-                        margin-right: 5px;
-                    }
-            
-                    .dc_off {
-                        @include product_dcOff_font;                                                
+                .swiper-slide {            
+                    a {
+                        display: block;
+                        overflow: hidden;                           
+                        img {
+                        width: 100%;                
                     }
                 }
-                .tag {
-                    @include product_tag_font;                    
+                .item_text {
+                    margin-top: 15px;
+                    text-align: left;
+                    h5 {
+                    @include product_name_font;
+                    margin-bottom: 15px;
+                    }
+                    .price {                    
+                        margin-bottom: 15px;        
+                        .dc_price {
+                            @include product_dcSell_font;                        
+                            margin-right: 5px;
+                        }            
+                        .normal_price {
+                            @include product_normalSell_font;                        
+                            margin-right: 5px;
+                        }            
+                        .dc_off {
+                            @include product_dcOff_font;                                                
+                        }
+                    }
+                    .tag {
+                        @include product_tag_font;                    
+                    }
                 }
+                }
+            /* 좌우 버튼 */
+                
             }
-            }
-          /* 좌우 버튼 */
-            
         }
     }
 
