@@ -8,12 +8,19 @@
     <title>BLACKYAK</title>
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/main.css">
+    <script src="./scripts/index.js" defer></script>
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body>
     <header>        
         <!-- 헤더 로고 -->
-        <h1 class="mainlogo">
+        <h1 class="main_logo">
             <a href="./index.html">
                 <img src="./images/logo_white.png" alt="BLACKYAK">
             </a>
@@ -52,6 +59,7 @@
     </header>
 
     <main>
+        <!-- /******************************1행 메인배너***********************************/ -->
         <!-- 메인 배너 -->
         <section id="main_banner">
             <!-- 스와이퍼 추가 -->
@@ -83,12 +91,115 @@
                     </div>
                 </div>   
                 <!-- 슬라이드 이전 다음 버튼 -->     
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>                          
-            </div>
-            <!-- 배너 위 내용 -->
-            
+                <div class="controls">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>                          
+            </div>                        
         </section>
+        <!-- /******************************2행 Best item*********************************/ -->
+        <section id="best_item">
+            <!-- 대제목 -->
+            <h3>BEST ITEM</h3>
+            <!-- 선택항목 -->        
+            <div class="category">
+                <ul class="best_product">
+                    <li><button type="button" class="active">MD's pick</button></li>
+                    <li><button type="button">상의</button></li>
+                    <li><button type="button">하의</button></li>
+                    <li><button type="button">아우터</button></li>
+                    <li><button type="button">다운자켓</button></li>                             
+                </ul> 
+
+                <div class="best_item_controls">                    
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>                    
+                </div> 
+            </div>    
+
+            <div class="product_list">
+                <!-- MD 상품표시 -->
+                <div class="swiper" id="best_item_slide"><!-- 슬라이드 -->                
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">
+                            <a href="#">
+                                <img src="./best_item/product1.png" alt="상품이미지">                            
+                            </a>                   
+                            <div class="best_item_text">
+                                <h5>여성 루클라 후디 튜브 다운자켓</h5>                                
+                                <p class="price">
+                                    <span class="dc_price">259,000</span>
+                                    <del class="normal_price">309,000</del> 
+                                    <em class="dc_off">16%</em>
+                                </p>
+                                <p class="tag">아이유 착용</p>
+                            </div>         
+                        </div>                    
+                        <div class="swiper-slide slide2">
+                            <a href="#">
+                                <img src="./best_item/product2.png" alt="상품이미지">                            
+                            </a>                   
+                            <div class="best_item_text">
+                                <h5>남성 히말라야 코듀로이 팬츠#1</h5>                                
+                                <p class="price">
+                                    <span class="dc_price">126,700</span>
+                                    <del class="normal_price">149,000</del> 
+                                    <em class="dc_off">15%</em>
+                                </p>
+                                <p class="tag">쿠폰 사용 가능</p>
+                            </div>         
+                        </div>  
+                        <div class="swiper-slide slide3">
+                            <a href="#">
+                                <img src="./best_item/product3.png" alt="상품이미지">                            
+                            </a>                   
+                            <div class="best_item_text">
+                                <h5>남성 마운틴 그래픽 라운드 긴팔티#1</h5>                                
+                                <p class="price">
+                                    <span class="dc_price">67,200</span>
+                                    <del class="normal_price">79,000</del> 
+                                    <em class="dc_off">15%</em>
+                                </p>
+                                <p class="tag">쿠폰 사용 가능</p>
+                            </div>         
+                        </div>  
+                        <div class="swiper-slide slide4">
+                            <a href="#">
+                                <img src="./best_item/product4.png" alt="상품이미지">                            
+                            </a>                   
+                            <div class="best_item_text">
+                                <h5>남성 트레일러닝 폴라텍 우븐 윈드자켓#1</h5>                                
+                                <p class="price">
+                                    <span class="dc_price">194,700</span>
+                                    <del class="normal_price">229,000</del> 
+                                    <em class="dc_off">19%</em>
+                                </p>
+                                <p class="tag">쿠폰 사용 가능</p>
+                            </div>         
+                        </div>  
+                        <div class="swiper-slide slide5">
+                            <a href="#">
+                                <img src="./best_item/product4.png" alt="상품이미지">                            
+                            </a>                   
+                            <div class="best_item_text">
+                                <h5>남성 트레일러닝 폴라텍 우븐 윈드자켓#1</h5>                                
+                                <p class="price">
+                                    <span class="dc_price">194,700</span>
+                                    <del class="normal_price">229,000</del> 
+                                    <em class="dc_off">19%</em>
+                                </p>
+                                <p class="tag">쿠폰 사용 가능</p>
+                            </div>         
+                        </div>  
+                    </div> 
+                    <!-- 슬라이드 이전 다음 버튼 -->     
+                    
+                </div> 
+        </div>
+        </section>
+        <!-- /******************************3행 광고 배너**********************************/ -->
+        <section></section>
+
     </main>
 
     <footer>

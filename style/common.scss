@@ -1,12 +1,4 @@
-$header_fixed_color:#0A0F14;
-$header_font_color:#F1F1F1;
-
-$header_search_color:#333;
-$header_search_font_color:#666;
-
-$color_light_gray:#C7C7C7;
-$color_white:#fff;
-
+@use './variable.scss' as *;
 header {
     min-width: 1920px;
     position: fixed;              
@@ -17,11 +9,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 120px;
-    background-color: $header_fixed_color;
+    padding: 0 120px;    
     color: $header_font_color;
     z-index: 100;
     // 로고
+    &.scroll {
+    background-color: $header_fixed_color;    
+    }
     .main_logo {
         a {
             display: block;            
@@ -109,11 +103,10 @@ header {
                     img {
                         width: 22px;
                         height: 22px;
-                    }
-
-                    &:hover img {
-                        opacity: 0.5;
-                    }
+                        &:hover {
+                            opacity: 0.5;
+                        }
+                    }                    
                 }
             }
         }

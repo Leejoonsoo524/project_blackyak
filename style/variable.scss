@@ -1,0 +1,44 @@
+$header_fixed_color:#0A0F14;
+$header_font_color:#F1F1F1;
+
+$header_search_color:#333;
+$header_search_font_color:#666;
+
+$color_light_gray:#C7C7C7;
+$color_white:#FFF;
+
+@mixin product_category_font{
+    font-size:0.938rem;
+    font-weight: 400;
+}
+
+@mixin product_name_font{
+    font-size:0.875rem;
+    font-weight: 400;
+}
+@mixin product_dcSell_font{
+    font-size:0.813rem;
+    font-weight: 500;
+}
+@mixin product_normalSell_font{
+    font-size:0.75rem;
+    font-weight: 400;
+    color: #B1B1B1;
+}
+@mixin product_dcOff_font{
+    font-size:0.813rem;
+    font-weight: 400;
+    color: #FF5C47;
+}
+@mixin product_tag_font{
+    font-size:0.625rem;
+    font-weight: 400;
+    background-color: #EEE;
+    color: #000;
+    padding: 5px 10px;
+    display: inline-block;
+}
+@mixin product_font_L{
+    font-size:2.188rem;
+    font-weight: 700;
+}
