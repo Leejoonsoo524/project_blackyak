@@ -97,16 +97,16 @@ main {
                     }
                 }
             }
-            .best_item_controls {                
-                position: absolute;
-                width: auto;
+            .best_item_controls {                    
+                .controls{
+                position: absolute;     
                 right: 0;
-                top: 25px;
-                z-index: 100;
+                top: 25px;                          
                 display: flex;
                 justify-content: flex-end; 
                 align-items: center;
-                gap: 20px;                
+                gap: 20px;
+                }                
                 .swiper-button-next,
                 .swiper-button-prev {                
                 position: static;
@@ -122,8 +122,8 @@ main {
 
                 .swiper-button-next::after,
                 .swiper-button-prev::after {                
-                    background:url(https://cdn-icons-png.flaticon.com/128/2609/2609370.png) no-repeat center / 25px;
-                    content:''; display:block; width:30px; height:30px; opacity:0.8;
+                    background:url(../images/arrow_back_ios.png) no-repeat center / 30px;
+                    content:''; display:block; width:40px; height:40px; opacity:0.8;
                 }
                 .swiper-button-next::after{transform:scaleX(-1);}
             }
@@ -139,39 +139,48 @@ main {
                         display: block;
                         overflow: hidden;                           
                         img {
-                        width: 100%;                
-                    }
-                }
-                .item_text {
-                    margin-top: 15px;
-                    text-align: left;
-                    h5 {
-                    @include product_name_font;
-                    margin-bottom: 15px;
-                    }
-                    .price {                    
-                        margin-bottom: 15px;        
-                        .dc_price {
-                            @include product_dcSell_font;                        
-                            margin-right: 5px;
-                        }            
-                        .normal_price {
-                            @include product_normalSell_font;                        
-                            margin-right: 5px;
-                        }            
-                        .dc_off {
-                            @include product_dcOff_font;                                                
+                            width: 100%;                
                         }
                     }
-                    .tag {
-                        @include product_tag_font;                    
+                    .item_text {
+                        margin-top: 15px;
+                        text-align: left;
+                        h5 {
+                        @include product_name_font;
+                        margin-bottom: 15px;
+                        }
+                        .price {                    
+                            margin-bottom: 15px;        
+                            .dc_price {
+                                @include product_dcSell_font;                        
+                                margin-right: 5px;
+                            }            
+                            .normal_price {
+                                @include product_normalSell_font;                        
+                                margin-right: 5px;
+                            }            
+                            .dc_off {
+                                @include product_dcOff_font;                                                
+                            }
+                        }
+                        .tag {
+                            @include product_tag_font;                    
+                        }
                     }
                 }
-                }
-            /* 좌우 버튼 */
-                
             }
         }
     }
+    /**********************메인 2행 BEST ITEM END*************************/
+
+    /**********************메인 3행 CM 배너 START**************************/
+    #cm_banner{
+        margin-bottom: 80px;
+    }
+    /**********************메인 3행 CM 배너 END****************************/
+
+    /**********************메인 4행 NEW ITEM START************************/
+    
+    /**********************메인 4행 NEW ITEM END**************************/
 
 }

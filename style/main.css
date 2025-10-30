@@ -199,12 +199,10 @@ main #best_item .category .best_product li button:hover, main #best_item .catego
   background: #333;
   color: #FFF;
 }
-main #best_item .category .best_item_controls {
+main #best_item .category .best_item_controls .controls {
   position: absolute;
-  width: auto;
   right: 0;
   top: 25px;
-  z-index: 100;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -227,11 +225,11 @@ main #best_item .category .best_item_controls .swiper-button-next svg {
 }
 main #best_item .category .best_item_controls .swiper-button-next::after,
 main #best_item .category .best_item_controls .swiper-button-prev::after {
-  background: url(https://cdn-icons-png.flaticon.com/128/2609/2609370.png) no-repeat center/25px;
+  background: url(../images/arrow_back_ios.png) no-repeat center/30px;
   content: "";
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   opacity: 0.8;
 }
 main #best_item .category .best_item_controls .swiper-button-next::after {
@@ -286,8 +284,17 @@ main #best_item .best_product_list .swiper .swiper-slide .item_text .tag {
   padding: 5px 10px;
   display: inline-block;
 }
-main #best_item .best_product_list .swiper {
-  /* 좌우 버튼 */
+main {
+  /**********************메인 2행 BEST ITEM END*************************/
+  /**********************메인 3행 CM 배너 START**************************/
+}
+main #cm_banner {
+  margin-bottom: 80px;
+}
+main {
+  /**********************메인 3행 CM 배너 END****************************/
+  /**********************메인 4행 NEW ITEM START************************/
+  /**********************메인 4행 NEW ITEM END**************************/
 }
 
 /*# sourceMappingURL=main.css.map */
