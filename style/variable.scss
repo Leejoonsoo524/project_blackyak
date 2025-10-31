@@ -1,12 +1,26 @@
+$header_height:80px;
 $header_fixed_color:#0A0F14;
 $header_font_color:#F1F1F1;
-
 $header_search_color:#333;
 $header_search_font_color:#666;
+
 
 $color_light_gray:#C7C7C7;
 $color_white:#FFF;
 
+
+@mixin header_sub_menu_title{
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: $color_white;
+    letter-spacing: -0.02rem
+}
+@mixin header_sub_menu_product{
+    font-size: 0.813rem;
+    font-weight: 400;
+    color: #B2B2B2;
+    letter-spacing: -0.02rem
+}
 @mixin product_category_font{
     font-size:0.938rem;
     font-weight: 400;

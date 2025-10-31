@@ -4,6 +4,47 @@ window.addEventListener('scroll', () => {
     if (window.scrollY > 0)       header.classList.add('scroll');
     else                          header.classList.remove('scroll');
 });  
+/**************헤더 nav hover 배경변경************/
+const navHover = document.querySelectorAll('nav [class*="lnb"]');
+const itemHover = document.querySelectorAll('nav .item li a');
+function addBg() {
+    return header.style.backgroundColor = '#0A0F14';
+}
+
+function removeBg() {
+    return header.style.backgroundColor = '';
+}
+navHover.forEach(menu => {
+    const lnbHover = menu.querySelector('.lnb');    
+
+    menu.addEventListener('mouseover', addBg);
+    menu.addEventListener('mouseout', removeBg);
+
+    if (lnbHover) {
+        lnbHover.addEventListener('mouseover', addBg);
+        lnbHover.addEventListener('mouseout', removeBg);
+    }   
+})
+itemHover.forEach(item => {
+    item.addEventListener('mouseover', () => {
+                        // ‘a’ → li(item)  → ul.item     → li(카테고리)
+        const itemTitle = item.parentElement.parentElement.parentElement;   //대분류->ex) 상의를 가지고있는 li를 선택함
+        const titleFont = itemTitle.firstElementChild;
+    
+        if (titleFont)     
+            {
+            titleFont.style.transform = 'scale(1.1)';        
+            titleFont.style.transformOrigin = 'left bottom';}
+    })
+
+    item.addEventListener('mouseout', () => {
+        const itemTitle = item.parentElement.parentElement.parentElement;   //대분류->ex) 상의를 가지고있는 li를 선택함
+        const titleFont = itemTitle.firstElementChild;
+
+    if (titleFont)     titleFont.style.transform = 'scale(1.0)';        
+})
+})
+
 /***********메인 BEST ITEM 카테고리 버튼**********/
 const bestCatagory = document.querySelectorAll('.category .best_product button');
 const controlSets = document.querySelectorAll('.best_item_controls .controls');
@@ -15,7 +56,7 @@ sliders.forEach((s, i) => {
 });
 // 첫번째 컨트롤 보이게
 controlSets.forEach((c, i) => {
-    c.style.display = i === 0 ? 'flex' : 'none'; // ❗기존에는 없었음 (초기 컨트롤 안보임 문제 해결)
+    c.style.display = i === 0 ? 'flex' : 'none';
 });
 
 bestCatagory.forEach((btn, index) => { 

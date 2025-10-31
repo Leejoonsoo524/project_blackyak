@@ -1,11 +1,12 @@
 @use './variable.scss' as *;
 header {
     min-width: 1920px;
+    position: relative;
     position: fixed;              
     top: 0;
     left: 0;
     width: 100%;
-    height: 80px;
+    height: $header_height;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,17 +28,89 @@ header {
         flex: 1;
         display: flex;
         justify-content: center;
+        height: 100%;
         .product {
             display: flex;
             gap: 40px;
-            li {
-                a {
+            height: 100%;            
+            > li {                    
+                height: 100%;                    
+                > a {
                     color: $header_font_color;
                     font-size: 16px;
-                    font-weight: 500;
+                    font-weight: 500; 
+                    height: 100%;      
+                    display: flex;
+                    align-items: center;                            
                     &:hover {
                         color: $color_light_gray;
                     }
+                }
+                .lnb {                                              //서브메뉴 전체
+                    display: none;
+                    position: absolute;
+                    width: 100%;
+                    background-color: $header_fixed_color;
+                    top: $header_height;                            //헤더높이만큼내림
+                    left: 0;                                        
+                    z-index: 50;
+                    padding: 60px 120px;                  
+                    .lnb_inner {                                    
+                        //카테고리+이미지 묶음                 
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;            
+                        .lnb_category {                     
+                            //상품 대분류(상의,하의 하우터 등등) 
+                            display: flex;                          
+                            flex-flow: row nowrap;                  //상품 대분류 가로배치 줄바꿈x                            
+                            align-items: flex-start;
+                            justify-content: flex-start;
+                            gap: 120px;                             //상품 대분류 끼리 간격                            
+                            > li {                                  
+                                //상품 대분류+소분류 묶음
+                                display: flex;
+                                flex-flow: column wrap;             //태그묶음 세로정렬 줄바꿈
+                                align-items: flex-start;            //묶음 안에서 왼쪽정렬
+                                gap: 15px;                          //상품 대분류+소분류 간격
+                                > a {
+                                    //상의 하의 아우터 등등 대분류 글씨
+                                    width: 100%;
+                                    display: block;
+                                    @include header_sub_menu_title;                                    
+                                }    
+                                .item {      
+                                    //반팔/긴팔/셔츠 같은 소분류 묶음                                                                 
+                                    display: flex;
+                                    flex-flow: column wrap;         //묶음 안에서 세로정렬 줄바꿈
+                                    gap: 15px;                      //소분류 간격
+                                    a {
+                                        //소분류 글씨
+                                        display: block;
+                                        width: 120px;
+                                        @include header_sub_menu_product;  
+                                        &:hover{
+                                            opacity: 0.7;
+                                        }                                      
+                                    }
+                                }                                               
+                            } 
+                            > .row_category {
+                                display: flex;
+                                flex-flow: column wrap; // 이미 column이지만 명시
+                                justify-content: flex-start;
+                                gap: 100px;
+                            }                            
+                        }                        
+                        .lnb_thumb {                                                   
+                            img {
+                                
+                            }
+                        }            
+                    }                                        
+                }
+                &:hover .lnb{
+                    display: block;
                 }
             }
         }
