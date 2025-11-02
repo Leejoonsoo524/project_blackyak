@@ -82,12 +82,12 @@ header {
                                 .item {      
                                     //반팔/긴팔/셔츠 같은 소분류 묶음                                                                 
                                     display: flex;
-                                    flex-flow: column wrap;         //묶음 안에서 세로정렬 줄바꿈
-                                    gap: 15px;                      //소분류 간격
+                                    flex-flow: column wrap;         //묶음 안에서 세로정렬 줄바꿈                                                                        
                                     a {
                                         //소분류 글씨
                                         display: block;
                                         width: 120px;
+                                        padding-bottom: 15px;
                                         @include header_sub_menu_product;  
                                         &:hover{
                                             opacity: 0.7;

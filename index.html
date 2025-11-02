@@ -199,7 +199,51 @@
                         </div>
                     </div>
                 </li>
-                <li class="col_lnb"><a href="#">컬렉션</a></li>
+                <li class="col_lnb"><a href="#">컬렉션</a>
+                    <div class="lnb">
+                        <div class="lnb_inner">
+                            <ul class="lnb_category">
+                                <li><a href="#">DNS</a>
+                                    <ul class="item">
+                                        <li><a href="#">베이스 레이어</a></li>
+                                        <li><a href="#">티셔츠</a></li>
+                                        <li><a href="#">미드 레이어</a></li>
+                                        <li><a href="#">인슐레이션</a></li>                                        
+                                        <li><a href="#">쉘</a></li>
+                                        <li><a href="#">소프트 쉘(PANTS)</a></li>
+                                        <li><a href="#">하드 쉘(PANTS)</a></li>
+                                        <li><a href="#">용품</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">트레일런</a>
+                                    <ul class="item">
+                                        <li><a href="#">상의</a></li>
+                                        <li><a href="#">하의</a></li>
+                                        <li><a href="#">용품</a></li>                                        
+                                        <li><a href="#">신발</a></li>                                        
+                                    </ul>
+                                </li>
+                                <li><a href="#">BCC</a>
+                                    <ul class="item">
+                                        <li><a href="#">상의</a></li>
+                                        <li><a href="#">하의</a></li>                                        
+                                        <li><a href="#">용품</a></li>                                        
+                                    </ul>
+                                </li>
+                                <li><a href="#">히말라야</a>
+                                    <ul class="item">
+                                        <li><a href="#">상의</a></li>
+                                        <li><a href="#">하의</a></li>                                        
+                                        <li><a href="#">용품</a></li>                                        
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p class="lnb_thumb">
+                                <img src="./sub_menu_img/collection_product.png" alt="남성 제품 이미지">
+                            </p>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </nav>
         <!-- 헤더 우측 메뉴 -->
@@ -687,11 +731,334 @@
             </div><!-- best_product_list end -->
         </section>
         <!-- /******************************3행 광고 배너**********************************/ -->
-        <div id="cm_banner">
-            <img src="./images/small_banner.png" alt="">
+        <div id="cm_banner">        
+            <a href="#"></a>                   
         </div>
         <!-- /******************************4행 new item*********************************/ -->
-        <section id="new_item"></section>
+        <section id="new_item">
+            <!-- 대제목 -->
+            <h3>NEW ITEM</h3>
+            <!-- 선택항목 -->        
+            <div class="category">
+                <ul class="new_product">
+                    <li><button type="button" class="active">ALL</button></li>
+                    <li><button type="button">MEN</button></li>
+                    <li><button type="button">WOMEN</button></li>
+                    <li><button type="button">DNS</button></li>                    
+                </ul>   
+
+                <div class="new_item_controls">     
+                    <div class="controls" id="ctrl-all">
+                        <div class="swiper-button-prev"></div>                    
+                        <div class="swiper-button-next"></div>
+                    </div>               
+
+                    <div class="controls" id="ctrl-men">
+                        <div class="swiper-button-prev"></div>                    
+                        <div class="swiper-button-next"></div>
+                    </div>               
+
+                    <div class="controls" id="ctrl-women">
+                        <div class="swiper-button-prev"></div>                    
+                        <div class="swiper-button-next"></div>
+                    </div>               
+                    
+                    <div class="controls" id="ctrl-dns">
+                        <div class="swiper-button-prev"></div>                    
+                        <div class="swiper-button-next"></div>
+                    </div>                                   
+                </div> 
+            </div> 
+
+            <div class="new_product_list">
+                <!-- ALL 상품표시 -->
+                <div class="swiper" id="all_item_slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">
+                            <a href="#">
+                                <img src="./new_item/women_item2.png" alt="상품이미지">                            
+                            </a>                   
+                            <div class="item_text">
+                                <h5>여성 트레블 고어텍스 WSP 자켓#2</h5>                                
+                                <p class="price">
+                                    <span class="dc_price">339,200</span>
+                                    <del class="normal_price">399,000</del> 
+                                    <em class="dc_off">15%</em>
+                                </p>                                
+                            </div>         
+                        </div>                    
+                        <div class="swiper-slide slide2">
+                            <a href="#">
+                                <img src="./new_item/men_item1.png" alt="상품이미지">                            
+                            </a>                   
+                            <div class="item_text">
+                                <h5>남성 히마 WSP 롱 다운자켓#1</h5>                                
+                                <p class="price">
+                                    <span class="dc_price">499,000</span>
+                                    <del class="normal_price">699,000</del> 
+                                    <em class="dc_off">29%</em>
+                                </p>                                
+                            </div>         
+                        </div>  
+                        <div class="swiper-slide slide3">
+                            <a href="#">
+                                <img src="./new_item/women_item3.png" alt="상품이미지">                            
+                            </a>                   
+                            <div class="item_text">
+                                <h5>여성 와플 집업 긴팔티#2</h5>                                
+                                <p class="price">
+                                    <span class="dc_price">75,700</span>
+                                    <del class="normal_price">89,000</del> 
+                                    <em class="dc_off">15%</em>
+                                </p>                                
+                            </div>         
+                        </div>  
+                        <div class="swiper-slide slide4">
+                            <a href="#">
+                                <img src="./new_item/men_item3.png" alt="상품이미지">                            
+                            </a>                   
+                            <div class="item_text">
+                                <h5>남성 트레일러닝 기모 트레이닝 자켓#1</h5>                                
+                                <p class="price">
+                                    <span class="dc_price">152,200</span>
+                                    <del class="normal_price">179,000</del> 
+                                    <em class="dc_off">15%</em>
+                                </p>                                
+                            </div>         
+                        </div>  
+                        <div class="swiper-slide slide5">
+                            <a href="#">
+                                <img src="./new_item/men_item5.png" alt="상품이미지">                            
+                            </a>                   
+                            <div class="item_text">
+                                <h5>남성 343 어드벤처 II#1</h5>                                
+                                <p class="price">
+                                    <span class="dc_price">179,000</span>
+                                    <del class="normal_price">179,000</del> 
+                                    <em class="dc_off">0%</em>
+                                </p>                                
+                            </div>         
+                        </div>  
+                    </div>                     
+                </div><!-- all_item_slide swiper end--> 
+                
+                <div class="swiper" id="men_item_slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">
+                            <a href="#">
+                                <img src="./new_item/men_item1.png" alt="상품이미지">                            
+                            </a>                   
+                            <div class="item_text">
+                                <h5>남성 히마 WSP 롱 다운자켓#1</h5>                                
+                                <p class="price">
+                                    <span class="dc_price">449,000</span>
+                                    <del class="normal_price">699,000</del> 
+                                    <em class="dc_off">29%</em>
+                                </p>                                
+                            </div>         
+                        </div>                    
+                        <div class="swiper-slide slide2">
+                            <a href="#">
+                                <img src="./new_item/men_item2.png" alt="상품이미지">                            
+                            </a>                   
+                            <div class="item_text">
+                                <h5>남성 히말라야 체크 패딩 셔츠#1</h5>                                
+                                <p class="price">
+                                    <span class="dc_price">152,200</span>
+                                    <del class="normal_price">179,000</del> 
+                                    <em class="dc_off">15%</em>
+                                </p>                                
+                            </div>         
+                        </div>  
+                        <div class="swiper-slide slide3">
+                            <a href="#">
+                                <img src="./new_item/men_item3.png" alt="상품이미지">                            
+                            </a>                   
+                            <div class="item_text">
+                                <h5>남성 트레일러닝 기모 트레이닝 자켓#1</h5>                                
+                                <p class="price">
+                                    <span class="dc_price">152,200</span>
+                                    <del class="normal_price">179,000</del> 
+                                    <em class="dc_off">15%</em>
+                                </p>                                
+                            </div>         
+                        </div>  
+                        <div class="swiper-slide slide4">
+                            <a href="#">
+                                <img src="./new_item/men_item4.png" alt="상품이미지">                            
+                            </a>                   
+                            <div class="item_text">
+                                <h5>남성 택티컬 코듀라 카고팬츠#1</h5>                                
+                                <p class="price">
+                                    <span class="dc_price">152,200</span>
+                                    <del class="normal_price">179,000</del> 
+                                    <em class="dc_off">15%</em>
+                                </p>                                
+                            </div>         
+                        </div>  
+                        <div class="swiper-slide slide5">
+                            <a href="#">
+                                <img src="./new_item/men_item5.png" alt="상품이미지">                            
+                            </a>                   
+                            <div class="item_text">
+                                <h5>남성 343 어드벤처 II#1</h5>                                
+                                <p class="price">
+                                    <span class="dc_price">179,000</span>
+                                    <del class="normal_price">179,000</del> 
+                                    <em class="dc_off">0%</em>
+                                </p>                                
+                            </div>         
+                        </div>  
+                    </div>                     
+                </div><!-- men_item_slide swiper end--> 
+                
+                <div class="swiper" id="women_item_slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">
+                            <a href="#">
+                                <img src="./new_item/women_item1.png" alt="상품이미지">                            
+                            </a>                   
+                            <div class="item_text">
+                                <h5>여성 히마 WSP 롱 다운자켓#1</h5>                                
+                                <p class="price">
+                                    <span class="dc_price">449,000</span>
+                                    <del class="normal_price">699,000</del> 
+                                    <em class="dc_off">29%</em>
+                                </p>                                
+                            </div>         
+                        </div>                    
+                        <div class="swiper-slide slide2">
+                            <a href="#">
+                                <img src="./new_item/women_item2.png" alt="상품이미지">                            
+                            </a>                   
+                            <div class="item_text">
+                                <h5>여성 트레블 고어텍스 WSP 자켓#2</h5>                                
+                                <p class="price">
+                                    <span class="dc_price">339,200</span>
+                                    <del class="normal_price">399,000</del> 
+                                    <em class="dc_off">15%</em>
+                                </p>                                
+                            </div>         
+                        </div>  
+                        <div class="swiper-slide slide3">
+                            <a href="#">
+                                <img src="./new_item/women_item3.png" alt="상품이미지">                            
+                            </a>                   
+                            <div class="item_text">
+                                <h5>여성 와플 집업 긴팔티#2</h5>                                
+                                <p class="price">
+                                    <span class="dc_price">75,700</span>
+                                    <del class="normal_price">89,000</del> 
+                                    <em class="dc_off">15%</em>
+                                </p>                                
+                            </div>         
+                        </div>  
+                        <div class="swiper-slide slide4">
+                            <a href="#">
+                                <img src="./new_item/women_item4.png" alt="상품이미지">                            
+                            </a>                   
+                            <div class="item_text">
+                                <h5>여성 튜브 다운 와이드팬츠#2</h5>                                
+                                <p class="price">
+                                    <span class="dc_price">203,200</span>
+                                    <del class="normal_price">239,000</del> 
+                                    <em class="dc_off">15%</em>
+                                </p>                                
+                            </div>         
+                        </div>  
+                        <div class="swiper-slide slide5">
+                            <a href="#">
+                                <img src="./new_item/women_item5.png" alt="상품이미지">                            
+                            </a>                   
+                            <div class="item_text">
+                                <h5>여성 카르카 WSP 다운자켓#2</h5>                                
+                                <p class="price">
+                                    <span class="dc_price">379,000</span>
+                                    <del class="normal_price">499,000</del> 
+                                    <em class="dc_off">24%</em>
+                                </p>                                
+                            </div>         
+                        </div>  
+                    </div>                     
+                </div><!-- women_item_slide swiper end-->
+
+                <div class="swiper" id="dns_item_slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">
+                            <a href="#">
+                                <img src="./new_item/dns_item1.png" alt="상품이미지">                            
+                            </a>                   
+                            <div class="item_text">
+                                <h5>공용 DNS 툴라기 라이트 GTX 자켓#3</h5>                                
+                                <p class="price">
+                                    <span class="dc_price">424,200</span>
+                                    <del class="normal_price">499,000</del> 
+                                    <em class="dc_off">15%</em>
+                                </p>                                
+                            </div>         
+                        </div>                    
+                        <div class="swiper-slide slide2">
+                            <a href="#">
+                                <img src="./new_item/dns_item2.png" alt="상품이미지">                            
+                            </a>                   
+                            <div class="item_text">
+                                <h5>D남성 울 베이스레이어</h5>                                
+                                <p class="price">
+                                    <span class="dc_price">68,700</span>
+                                    <del class="normal_price">109,000</del> 
+                                    <em class="dc_off">37%</em>
+                                </p>                                
+                            </div>         
+                        </div>  
+                        <div class="swiper-slide slide3">
+                            <a href="#">
+                                <img src="./new_item/dns_item3.png" alt="상품이미지">                            
+                            </a>                   
+                            <div class="item_text">
+                                <h5>공용 DNS 와투시 다운수트#3</h5>                                
+                                <p class="price">
+                                    <span class="dc_price">2,720,000</span>
+                                    <del class="normal_price">3,200,000</del> 
+                                    <em class="dc_off">15%</em>
+                                </p>                                
+                            </div>         
+                        </div>  
+                        <div class="swiper-slide slide4">
+                            <a href="#">
+                                <img src="./new_item/dns_item4.png" alt="상품이미지">                            
+                            </a>                   
+                            <div class="item_text">
+                                <h5>DNS비니 B</h5>                                
+                                <p class="price">
+                                    <span class="dc_price">52,700</span>
+                                    <del class="normal_price">62,000</del> 
+                                    <em class="dc_off">15%</em>
+                                </p>                                
+                            </div>         
+                        </div>  
+                        <div class="swiper-slide slide5">
+                            <a href="#">
+                                <img src="./new_item/dns_item5.png" alt="상품이미지">                            
+                            </a>                   
+                            <div class="item_text">
+                                <h5>D여성 울 헨리넥 베이스레이어</h5>                                
+                                <p class="price">
+                                    <span class="dc_price">75,000</span>
+                                    <del class="normal_price">119,000</del> 
+                                    <em class="dc_off">37%</em>
+                                </p>                                
+                            </div>         
+                        </div>  
+                    </div>                     
+                </div><!-- dns_item_slide swiper end-->
+            </div><!-- new_product_list end -->
+
+            <div class="new_more_view">
+                <button type="button">+</button>
+            </div>
+        </section>
+
+
     </main>
 
     <footer>
