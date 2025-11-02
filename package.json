@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/Leejoonsoo524/project_blackyak#readme",
   "dependencies": {
-    "sass": "^1.93.2"
+    "sass": "^1.93.3"
   }
 }
