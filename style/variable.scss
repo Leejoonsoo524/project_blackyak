@@ -3,11 +3,10 @@ $header_fixed_color:#0A0F14;
 $header_font_color:#F1F1F1;
 $header_search_color:#333;
 $header_search_font_color:#666;
-
-
+$main_camp_font_color:#555;
 $color_light_gray:#C7C7C7;
 $color_white:#FFF;
-
+$footer_color:#F0F0F0;
 
 @mixin header_sub_menu_title{
     font-size: 1.125rem;
@@ -52,7 +51,27 @@ $color_white:#FFF;
     padding: 5px 10px;
     display: inline-block;
 }
+@mixin product_text_C{
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 150%;
+    color: $main_camp_font_color;
+    letter-spacing: -0.02rem
+}
+@mixin product_font_M{
+    font-size:1.563rem;
+    font-weight: 700;
+}
 @mixin product_font_L{
     font-size:2.188rem;
     font-weight: 700;
+}
+@mixin product_find_h{
+    font-size: 1.125rem;
+    font-weight: 400;
+    letter-spacing: -0.02rem
+}
+@mixin product_find_t{
+    font-size:0.813rem;
+    font-weight: 500;    
 }

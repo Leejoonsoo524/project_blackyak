@@ -309,5 +309,180 @@ main {
         }
     }
     /**********************메인 4행 NEW ITEM END**************************/
+    /**********************메인 5행 CM 배너2 START*************************/
+    #cm_banner_2{
+        a{
+            display: block;
+            width: 100%;               
+            height: 400px;   
+            background-image: url('../images/small_banner2.png');
+            background-size: cover;     
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-bottom: 80px;    
+        }
+    }
+    /**********************메인 5행 CM 배너2 END***************************/
+    /**********************메인 6행 CAMP START****************************/
+    #camp{
+        width: 1680px;
+        margin: 0 auto 80px;
+        display: flex;
+        align-items: flex-start;        
+        gap: 60px;
+        .camp_img{
+            img{
+                height: 550px;
+            }
+        }
+        
+        .camp_right{            
+            display: flex;
+            gap: 40px;
+            flex-flow: column wrap;
+            justify-content: space-between;
+            .camp_category_text{            
+                .category {
+                    display: flex;
+                    flex-flow: column wrap;
+                    align-items: left;                    
+                    gap: 40px;
+                    margin-bottom: 10px;                
+                    .camp_category_top {
+                        display: flex;
+                        flex-flow: column wrap;
+                        align-items: left;
+                        gap: 20px;         
+                        h3 {                        
+                            @include product_font_M;                                            
+                        }        
+                        .camp_text{
+                            @include product_text_C;
+                        }
+                        
+                    }
+                    .camp_category_btn{
+                        display: flex;
+                        justify-content: space-between;                        
+                        .camp_product {
+                            display: flex;
+                            gap: 15px;        
+                            li {
+                                button {
+                                    border: 1px solid $color_light_gray;
+                                    border-radius: 30px;
+                                    padding: 10px 20px;
+                                    @include product_category_font;
+                                    color: $header_search_font_color;
+                                    cursor: pointer;
+                                    transition: 0.3s;        
+                                    &:hover,
+                                    &.active {
+                                        background: $header_search_color;
+                                        color: $color_white;
+                                    }
+                                }
+                            }
+                        }
+                        .camp_more_view{
+                            text-align: center;
+                            button{            
+                                border: 1px solid $color_light_gray;
+                                border-radius: 30px;
+                                padding: 10px 20px;
+                                &:hover{
+                                    background: $header_search_color;            
+                                    color: $color_white;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+            .camp_product {
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+                a {
+                    display: block;                                        
+                    img {
+                        width: 100%;                
+                    }
+                }
+                .item_text {
+                    margin-top: 10px;
+                    text-align: left;
+                    h5 {
+                    @include product_name_font;
+                    margin-bottom: 9px;
+                    }
+                    .price {                                            
+                        .dc_price {
+                            @include product_dcSell_font;                        
+                            margin-right: 5px;
+                        }            
+                        .normal_price {
+                            @include product_normalSell_font;                        
+                            margin-right: 5px;
+                        }            
+                        .dc_off {
+                            @include product_dcOff_font;                                                
+                        }
+                    }                    
+                }
+            }
+        }
+    }
+    /**********************메인 6행 CAMP END******************************/
+    /**********************메인 7행 CM 배너3 START*************************/
+    #cm_banner_3{
+        a{
+            display: block;
+            width: 100%;               
+            height: 200px;   
+            background-image: url('../images/small_banner3.png');
+            background-size: cover;     
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-bottom: 80px;    
+        }
+    }
+    /**********************메인 7행 CM 배너2 END***************************/
+    /**********************메인 8행 FIND_location START*******************/
+    #find_location{
+        width: 1680px;
+        margin: 0 auto 80px;
+        display: flex;
+        justify-content: space-between;
+        .location{        
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 15px;     
+            img{
+                display: block                
+            }
+            h5{
+                @include product_find_h;
+            }
+            .location_text{
+                @include product_find_t;
+            }
+            .find{                
+                text-align: center;
+                button{                                
+                    background: $header_fixed_color;
+                    color: $color_white;
+                    width: 100%;
+                    border-radius: 5px;
+                    padding: 10px 20px;
+                    &:hover{
+                        background: $header_search_color;                                    
+                    }
+                }                
+            }
+        }
+    }
+    /**********************메인 8행 FIND_location END*********************/
 
 }

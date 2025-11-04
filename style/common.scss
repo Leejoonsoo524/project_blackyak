@@ -185,3 +185,97 @@ header {
         }
     }
 }
+
+
+#footer_bg {
+    width: 100%;
+    background: $footer_color;
+    footer {
+        width: 1680px;
+        margin: 0 auto;
+        padding: 100px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-size: 14px;
+        line-height: 1.6;
+
+        .footer_left {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .main_logo img {
+                width: 120px;
+                display: block;
+            }
+
+            .footer_nav {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px 20px;
+
+                li {
+                    a {
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .info {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px 20px;
+
+                li {
+                    button {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .copy {
+                margin-top: 10px;
+                font-size: 13px;
+            }
+        }
+
+        .footer_right {
+            flex: 0.6;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            text-align: right;
+
+            .call_center p {
+                font-weight: bold;
+            }
+
+            .call_center_time p {
+                font-size: 13px;
+            }
+
+            .call_center_icon {
+                display: flex;
+                justify-content: flex-end;
+                gap: 15px;
+
+                div {
+                    a {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-decoration: none;
+                        font-size: 13px;
+
+                        img {
+                            width: 32px;
+                            height: 32px;
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

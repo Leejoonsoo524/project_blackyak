@@ -270,3 +270,78 @@ newSwiperSet.forEach(set => {
         },
     });
 });  
+
+
+
+
+/***********메인 CAMP ITEM 카테고리 버튼**********/
+const campCatagory = document.querySelectorAll('.category .camp_product button');
+const campProduct = document.querySelectorAll('.camp_product_list .camp_product');
+
+// 첫번째 슬라이드 보이게
+campProduct.forEach((s, i) => {
+    s.style.display = i === 0 ? 'flex' : 'none';
+});
+
+campCatagory.forEach((btn, index) => { 
+    btn.addEventListener('click', () => {    
+        campCatagory.forEach((i) => i.classList.remove('active'));    
+        btn.classList.add('active');
+
+        campProduct.forEach(s => s.style.display = 'none');        
+        campProduct[index].style.display = 'flex';        
+    });
+});
+
+/***********메인 NEW ITEM 상품 호버**************/
+const campProductId = [
+    'camp_all',
+    'camp_tent',
+    'camp_item',     
+    ];
+
+const campHoverImg = {
+    camp_all: [
+        './camping_item/all_product1_hover.png',
+        './camping_item/sup_product1_hover.png',
+        './camping_item/all_product3_hover.png',
+        './camping_item/all_product4_hover.png',        
+    ],
+    camp_tent: [
+        './camping_item/tent_product1_hover.png',
+        './camping_item/tent_product2_hover.png',        
+    ],
+    camp_item: [
+        './camping_item/sup_product1_hover.png',
+        './camping_item/sup_product2_hover.png',
+        './camping_item/sup_product3_hover.png',
+        './camping_item/sup_product4_hover.png',        
+    ]    
+};
+
+campProductId.forEach(id => {    
+    const imgHover = document.querySelectorAll(`#${id} img`);
+    
+    const hoverSet = campHoverImg[id]; 
+
+    imgHover.forEach((img, index) => {
+        const originalSrc = img.src; // 원래 이미지
+        const hoverSrc = hoverSet[index]; // hover용 이미지
+
+        img.addEventListener('mouseenter', () => {
+            img.src = hoverSrc;
+        });
+
+        img.addEventListener('mouseleave', () => {
+            img.src = originalSrc;
+        });
+    });
+});
+
+/***********메인 NEW ITEM 슬라이드****************/
+/*const newSwiperSet = [
+    { swiperId: 'all_item_slide'  , conId: 'ctrl-all' },
+    { swiperId: 'men_item_slide'  , conId: 'ctrl-men' },
+    { swiperId: 'women_item_slide', conId: 'ctrl-women' },
+    { swiperId: 'dns_item_slide'  , conId: 'ctrl-dns' },    
+];*/
