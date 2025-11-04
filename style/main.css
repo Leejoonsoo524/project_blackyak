@@ -167,71 +167,116 @@ header .right_menu .user_menu li a img:hover {
 #footer_bg footer {
   width: 1680px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 80px 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  font-size: 14px;
-  line-height: 1.6;
 }
 #footer_bg footer .footer_left {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   gap: 20px;
 }
 #footer_bg footer .footer_left .main_logo img {
-  width: 120px;
   display: block;
 }
 #footer_bg footer .footer_left .footer_nav {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px 20px;
+  flex-flow: row nowrap;
+}
+#footer_bg footer .footer_left .footer_nav li {
+  position: relative;
+  margin-right: 25px;
 }
 #footer_bg footer .footer_left .footer_nav li a {
-  text-decoration: none;
+  font-size: 0.938rem;
+  font-weight: 400;
+  letter-spacing: -0.02rem;
+}
+#footer_bg footer .footer_left .footer_nav li + li::before {
+  content: "";
+  position: absolute;
+  left: -12.5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 12px;
+  background-color: #ccc;
 }
 #footer_bg footer .footer_left .info {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px 20px;
+}
+#footer_bg footer .footer_left .info li {
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: -0.02rem;
+  color: #555;
+  margin-right: 20px;
+  position: relative;
+}
+#footer_bg footer .footer_left .info li a {
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: -0.02rem;
+  color: #555;
 }
 #footer_bg footer .footer_left .info li button {
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: -0.02rem;
+  color: #555;
   cursor: pointer;
 }
+#footer_bg footer .footer_left .info li + li::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 12px;
+  background-color: #ccc;
+}
 #footer_bg footer .footer_left .copy {
-  margin-top: 10px;
-  font-size: 13px;
+  font-size: 0.813rem;
+  font-weight: 400;
+  letter-spacing: -0.02rem;
+  color: #555;
 }
 #footer_bg footer .footer_right {
-  flex: 0.6;
   display: flex;
-  flex-direction: column;
-  gap: 15px;
-  text-align: right;
+  flex-flow: column wrap;
+  gap: 25px;
+  text-align: left;
 }
 #footer_bg footer .footer_right .call_center p {
-  font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: -0.02rem;
 }
 #footer_bg footer .footer_right .call_center_time p {
-  font-size: 13px;
+  font-size: 0.813rem;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.02rem;
 }
 #footer_bg footer .footer_right .call_center_icon {
   display: flex;
-  justify-content: flex-end;
-  gap: 15px;
+  justify-content: space-between;
 }
 #footer_bg footer .footer_right .call_center_icon div a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-decoration: none;
-  font-size: 13px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: -0.02rem;
 }
 #footer_bg footer .footer_right .call_center_icon div a img {
-  width: 32px;
-  height: 32px;
-  margin-bottom: 5px;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
 }
 
 main {
@@ -315,6 +360,7 @@ main #best_item {
 main #best_item h3 {
   font-size: 2.188rem;
   font-weight: 700;
+  letter-spacing: -0.02rem;
   text-align: left;
   margin-bottom: 40px;
 }
@@ -336,6 +382,7 @@ main #best_item .category .best_product li button {
   padding: 10px 20px;
   font-size: 0.938rem;
   font-weight: 400;
+  letter-spacing: -0.02rem;
   color: #666;
   cursor: pointer;
 }
@@ -399,6 +446,7 @@ main #best_item .best_product_list .swiper .swiper-slide .item_text {
 main #best_item .best_product_list .swiper .swiper-slide .item_text h5 {
   font-size: 0.875rem;
   font-weight: 400;
+  letter-spacing: -0.02rem;
   margin-bottom: 15px;
 }
 main #best_item .best_product_list .swiper .swiper-slide .item_text .price {
@@ -407,23 +455,27 @@ main #best_item .best_product_list .swiper .swiper-slide .item_text .price {
 main #best_item .best_product_list .swiper .swiper-slide .item_text .price .dc_price {
   font-size: 0.813rem;
   font-weight: 500;
+  letter-spacing: -0.02rem;
   margin-right: 5px;
 }
 main #best_item .best_product_list .swiper .swiper-slide .item_text .price .normal_price {
   font-size: 0.75rem;
   font-weight: 400;
+  letter-spacing: -0.02rem;
   color: #B1B1B1;
   margin-right: 5px;
 }
 main #best_item .best_product_list .swiper .swiper-slide .item_text .price .dc_off {
   font-size: 0.813rem;
   font-weight: 400;
+  letter-spacing: -0.02rem;
   color: #FF5C47;
 }
 main #best_item .best_product_list .swiper .swiper-slide .item_text .tag {
   font-size: 0.625rem;
   font-weight: 400;
-  background-color: #EEE;
+  letter-spacing: -0.02rem;
+  background: #EEE;
   color: #000;
   padding: 5px 10px;
   display: inline-block;
@@ -453,6 +505,7 @@ main #new_item {
 main #new_item h3 {
   font-size: 2.188rem;
   font-weight: 700;
+  letter-spacing: -0.02rem;
   text-align: left;
   margin-bottom: 40px;
 }
@@ -474,6 +527,7 @@ main #new_item .category .new_product li button {
   padding: 10px 20px;
   font-size: 0.938rem;
   font-weight: 400;
+  letter-spacing: -0.02rem;
   color: #666;
   cursor: pointer;
 }
@@ -538,6 +592,7 @@ main #new_item .new_product_list .swiper .swiper-slide .item_text {
 main #new_item .new_product_list .swiper .swiper-slide .item_text h5 {
   font-size: 0.875rem;
   font-weight: 400;
+  letter-spacing: -0.02rem;
   margin-bottom: 15px;
 }
 main #new_item .new_product_list .swiper .swiper-slide .item_text .price {
@@ -546,23 +601,27 @@ main #new_item .new_product_list .swiper .swiper-slide .item_text .price {
 main #new_item .new_product_list .swiper .swiper-slide .item_text .price .dc_price {
   font-size: 0.813rem;
   font-weight: 500;
+  letter-spacing: -0.02rem;
   margin-right: 5px;
 }
 main #new_item .new_product_list .swiper .swiper-slide .item_text .price .normal_price {
   font-size: 0.75rem;
   font-weight: 400;
+  letter-spacing: -0.02rem;
   color: #B1B1B1;
   margin-right: 5px;
 }
 main #new_item .new_product_list .swiper .swiper-slide .item_text .price .dc_off {
   font-size: 0.813rem;
   font-weight: 400;
+  letter-spacing: -0.02rem;
   color: #FF5C47;
 }
 main #new_item .new_product_list .swiper .swiper-slide .item_text .tag {
   font-size: 0.625rem;
   font-weight: 400;
-  background-color: #EEE;
+  letter-spacing: -0.02rem;
+  background: #EEE;
   color: #000;
   padding: 5px 10px;
   display: inline-block;
@@ -629,6 +688,7 @@ main #camp .camp_right .camp_category_text .category .camp_category_top {
 main #camp .camp_right .camp_category_text .category .camp_category_top h3 {
   font-size: 1.563rem;
   font-weight: 700;
+  letter-spacing: -0.02rem;
 }
 main #camp .camp_right .camp_category_text .category .camp_category_top .camp_text {
   font-size: 0.875rem;
@@ -651,6 +711,7 @@ main #camp .camp_right .camp_category_text .category .camp_category_btn .camp_pr
   padding: 10px 20px;
   font-size: 0.938rem;
   font-weight: 400;
+  letter-spacing: -0.02rem;
   color: #666;
   cursor: pointer;
   transition: 0.3s;
@@ -689,22 +750,26 @@ main #camp .camp_right .camp_product .item_text {
 main #camp .camp_right .camp_product .item_text h5 {
   font-size: 0.875rem;
   font-weight: 400;
+  letter-spacing: -0.02rem;
   margin-bottom: 9px;
 }
 main #camp .camp_right .camp_product .item_text .price .dc_price {
   font-size: 0.813rem;
   font-weight: 500;
+  letter-spacing: -0.02rem;
   margin-right: 5px;
 }
 main #camp .camp_right .camp_product .item_text .price .normal_price {
   font-size: 0.75rem;
   font-weight: 400;
+  letter-spacing: -0.02rem;
   color: #B1B1B1;
   margin-right: 5px;
 }
 main #camp .camp_right .camp_product .item_text .price .dc_off {
   font-size: 0.813rem;
   font-weight: 400;
+  letter-spacing: -0.02rem;
   color: #FF5C47;
 }
 main {
@@ -747,6 +812,7 @@ main #find_location .location h5 {
 main #find_location .location .location_text {
   font-size: 0.813rem;
   font-weight: 500;
+  letter-spacing: -0.02rem;
 }
 main #find_location .location .find {
   text-align: center;

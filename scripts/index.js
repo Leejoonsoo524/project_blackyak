@@ -4,6 +4,13 @@ window.addEventListener('scroll', () => {
     if (window.scrollY > 0)       header.classList.add('scroll');
     else                          header.classList.remove('scroll');
 });  
+/****************헤더 검색 지움******************/
+const searchInput = document.querySelector('.search_input input');
+const clearBtn = document.querySelector('.search_del');
+
+clearBtn.addEventListener('click', () => {
+    searchInput.value = '';
+});
 /****************헤더 베너 슬라이드***************/
 const yakMainBnr = new Swiper('#banner_slide',{
     autoplay:{delay:3000},

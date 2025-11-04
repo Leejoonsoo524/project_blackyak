@@ -193,31 +193,40 @@ header {
     footer {
         width: 1680px;
         margin: 0 auto;
-        padding: 100px 0;
+        padding: 80px 0;
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
-        font-size: 14px;
-        line-height: 1.6;
+        align-items: flex-start;        
 
         .footer_left {
             display: flex;
-            flex-direction: column;
+            flex-flow: column nowrap;
             gap: 20px;
 
-            .main_logo img {
-                width: 120px;
+            .main_logo img {                
                 display: block;
             }
 
             .footer_nav {
                 display: flex;
-                flex-wrap: wrap;
-                gap: 10px 20px;
+                flex-flow: row nowrap;                
 
                 li {
+                    position: relative;
+                    margin-right: 25px;
                     a {
-                        text-decoration: none;
+                        @include product_category_font;
+                    }
+                    
+                    & + li::before {
+                    content: "";
+                    position: absolute;
+                    left: -12.5px; 
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 1px;
+                    height: 12px;
+                    background-color: #ccc; // 선 색상
                     }
                 }
             }
@@ -225,53 +234,63 @@ header {
             .info {
                 display: flex;
                 flex-wrap: wrap;
-                gap: 10px 20px;
-
                 li {
+                    @include footer_info;  
+                    margin-right: 20px;
+                    position: relative;
+                    a{
+                        @include footer_info;
+                    }                  
                     button {
+                        @include footer_info;
                         cursor: pointer;
+                    }
+                    & + li::before {
+                    content: "";
+                    position: absolute;
+                    left: -10px; // gap 절반
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 1px;
+                    height: 12px;
+                    background-color: #ccc; // 선 색상
                     }
                 }
             }
 
             .copy {
-                margin-top: 10px;
-                font-size: 13px;
+                @include footer_copy;                
             }
         }
 
-        .footer_right {
-            flex: 0.6;
+        .footer_right {            
             display: flex;
-            flex-direction: column;
-            gap: 15px;
-            text-align: right;
+            flex-flow: column wrap;
+            gap: 25px;
+            text-align: left;
 
             .call_center p {
-                font-weight: bold;
+                @include footer_call_center;             
             }
 
             .call_center_time p {
-                font-size: 13px;
+                @include footer_call_time;
             }
 
             .call_center_icon {
                 display: flex;
-                justify-content: flex-end;
-                gap: 15px;
-
+                justify-content: space-between;             
                 div {
                     a {
                         display: flex;
                         flex-direction: column;
-                        align-items: center;
-                        text-decoration: none;
-                        font-size: 13px;
+                        align-items: center;                        
+                        @include product_name_font;
 
                         img {
-                            width: 32px;
-                            height: 32px;
-                            margin-bottom: 5px;
+                            width: 50px;
+                            height: 50px;
+                            margin-bottom: 10px;
                         }
                     }
                 }
