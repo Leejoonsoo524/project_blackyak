@@ -277,12 +277,14 @@ header .right_menu .user_menu li a img:hover {
 }
 
 main {
+  width: 100%;
   min-width: 1920px;
   margin-top: 80px;
 }
-main #banner {
+main #banner img {
   width: 100%;
-  display: block;
+}
+main #banner {
   margin-bottom: 80px;
 }
 main #product_item {
@@ -318,12 +320,12 @@ main #product_item .product_category li button:hover, main #product_item .produc
 }
 main #product_item .best_item .product {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-flow: row wrap;
+  gap: 45px;
 }
 main #product_item .best_item .product li {
   width: calc((100% - 180px) / 5);
-  margin-bottom: 40px;
 }
 main #product_item .best_item .product li a {
   display: block;
@@ -396,6 +398,9 @@ main #product_item .best_item .product li .item_text .tag_color .color_box .colo
 main #product_item .best_item .product li .item_text .tag_color .color_box .color.brown {
   background: #884401;
 }
+main #product_item .best_item .product li .item_text .tag_color .color_box .color.d_brown {
+  background: #473C38;
+}
 main #product_item .best_item .product li .item_text .tag_color .color_box .color.orange {
   background: #FF9D00;
 }
@@ -441,6 +446,9 @@ main #product_item .best_item .product li .item_text .tag_color .color_box .colo
 main #product_item .best_item .product li .item_text .tag_color .color_box .color.slate {
   background: #515F7C;
 }
+main #product_item .best_item .product li .item_text .tag_color .color_box .color.charcoal {
+  background: #565455;
+}
 main #product_item .best_item .product li .item_text .tag_color .color_box .color.khaki {
   background: #3d3f36;
 }
@@ -449,6 +457,12 @@ main #product_item .best_item .product li .item_text .tag_color .color_box .colo
 }
 main #product_item .best_item .product li .item_text .tag_color .color_box .color.silver_beige {
   background: #C8BEBC;
+}
+main #product_item .best_item .product li .item_text .tag_color .color_box .color.L_blue {
+  background: #272F44;
+}
+main #product_item .best_item .product li .item_text .tag_color .color_box .color.purple {
+  background: #5C50B9;
 }
 
 /*# sourceMappingURL=bestproduct.css.map */

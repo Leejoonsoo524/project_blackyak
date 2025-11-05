@@ -1,16 +1,16 @@
 @use './variable.scss' as *;
 main{
+    width: 100%;
     min-width: 1920px;
     margin-top: $header_height;    
     #banner{
-        width: 100%;
-        display: block;        
+
+        img{width: 100%;}               
         margin-bottom: 80px;        
     }
     #product_item{
         width: 1680px;        
-        margin: 0 auto 80px;
-        
+        margin: 0 auto 80px;        
         h3{
             @include product_font_L;
             text-align: center;
@@ -40,11 +40,11 @@ main{
         .best_item{
             .product{
                 display: flex;
-                justify-content: space-between;
+                justify-content: flex-start;
                 flex-flow: row wrap;
+                gap: 45px;
                 li{
-                    width: calc((100% - 180px) / 5);
-                    margin-bottom: 40px;
+                    width: calc((100% - 180px) / 5);                    
                     a {
                         display: block;                                        
                         img {
@@ -94,24 +94,28 @@ main{
                                     @include color_box;
                                     &.skyblue{background: #9CBBFF;}
                                     &.brown{background: #884401;}
+                                    &.d_brown{background: #473C38;}
                                     &.orange{background: #FF9D00;}
                                     &.d_orange{background: #CF442C;}
                                     &.green{background: #008300;}
-                                    &.white{background:#FFF}
-                                    &.black{background:#000}
-                                    &.beige{background:#AF9580}
-                                    &.L_beige{background:#EDEBB7}
+                                    &.white{background:#FFF;}
+                                    &.black{background:#000;}
+                                    &.beige{background:#AF9580;}
+                                    &.L_beige{background:#EDEBB7;}
                                     &.k_gray{background: #A4ADA8;}
                                     &.d_gray{background: #252429;}
-                                    &.gray{background:#8E8888}
-                                    &.navy{background:#232A34}
+                                    &.gray{background:#8E8888;}
+                                    &.navy{background:#232A34;}
                                     &.taupegray{background: #665858;}
                                     &.taupe{background: #B9A599;}
                                     &.astro{background: #5D9BB0;}
                                     &.slate{background: #515F7C;}
+                                    &.charcoal{background: #565455;}
                                     &.khaki{background: #3d3f36;}
                                     &.t_blue{background: #262F40;}
                                     &.silver_beige{background: #C8BEBC;}
+                                    &.L_blue{background: #272F44;}
+                                    &.purple{background: #5C50B9;}
                                 }
                                 
                             }
