@@ -24,7 +24,6 @@ const yakMainBnr = new Swiper('#banner_slide',{
 })
 /**************헤더 nav hover 배경변경************/
 const navHover = document.querySelectorAll('nav [class*="lnb"]');
-const itemHover = document.querySelectorAll('nav .item li a');
 
 function addBg() {
     return header.style.backgroundColor = '#0A0F14';
@@ -44,6 +43,8 @@ navHover.forEach(menu => {
         lnbHover.addEventListener('mouseout', removeBg);
     }   
 })
+/**************헤더 nav 카테고리 밑줄************/
+const itemHover = document.querySelectorAll('nav .item li a');
 itemHover.forEach(item => {
     item.addEventListener('mouseover', () => {
                         // ‘a’ → li(item)  → ul.item     → li(카테고리)
