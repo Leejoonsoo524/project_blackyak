@@ -25,7 +25,6 @@ header nav {
 }
 header nav .product {
   display: flex;
-  gap: 40px;
   height: 100%;
 }
 header nav .product > li {
@@ -37,6 +36,7 @@ header nav .product > li > a {
   font-weight: 500;
   height: 100%;
   display: flex;
+  padding: 0 20px;
   align-items: center;
 }
 header nav .product > li > a:hover {
@@ -283,8 +283,6 @@ main {
 }
 main #banner img {
   width: 100%;
-}
-main #banner {
   margin-bottom: 80px;
 }
 main #product_item {
@@ -317,6 +315,9 @@ main #product_item .product_category li button {
 main #product_item .product_category li button:hover, main #product_item .product_category li button.active {
   background: #333;
   color: #FFF;
+}
+main #product_item .best_item {
+  display: none;
 }
 main #product_item .best_item .product {
   display: flex;

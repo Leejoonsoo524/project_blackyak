@@ -4,9 +4,10 @@ main{
     min-width: 1920px;
     margin-top: $header_height;    
     #banner{
-
-        img{width: 100%;}               
-        margin-bottom: 80px;        
+        img{
+            width: 100%;
+            margin-bottom: 80px;
+        }                
     }
     #product_item{
         width: 1680px;        

@@ -28,7 +28,6 @@ header nav {
 }
 header nav .product {
   display: flex;
-  gap: 40px;
   height: 100%;
 }
 header nav .product > li {
@@ -41,6 +40,7 @@ header nav .product > li > a {
   height: 100%;
   display: flex;
   align-items: center;
+  padding: 0 20px;
 }
 header nav .product > li > a:hover {
   color: #C7C7C7;
@@ -429,6 +429,9 @@ main #best_item .category .best_item_controls .swiper-button-next::after {
 main #best_item {
   /* 슬라이드 영역 */
 }
+main #best_item .best_product_list {
+  margin-bottom: 25px;
+}
 main #best_item .best_product_list .swiper .swiper-wrapper {
   display: flex;
 }
@@ -477,8 +480,21 @@ main #best_item .best_product_list .swiper .swiper-slide .item_text .tag {
   letter-spacing: -0.02rem;
   background: #EEE;
   color: #000;
-  padding: 5px 10px;
+  padding: 4px;
   display: inline-block;
+}
+main #best_item .best_more_view {
+  text-align: center;
+}
+main #best_item .best_more_view a {
+  display: inline-block;
+  border: 1px solid #C7C7C7;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+main #best_item .best_more_view a:hover {
+  background: #333;
+  color: #FFF;
 }
 main {
   /**********************메인 2행 BEST ITEM END*************************/
@@ -574,9 +590,11 @@ main #new_item .category .new_item_controls .swiper-button-next::after {
 main #new_item {
   /* 슬라이드 영역 */
 }
+main #new_item .new_product_list {
+  margin-bottom: 25px;
+}
 main #new_item .new_product_list .swiper .swiper-wrapper {
   display: flex;
-  margin-bottom: 25px;
 }
 main #new_item .new_product_list .swiper .swiper-slide a {
   display: block;
@@ -623,18 +641,19 @@ main #new_item .new_product_list .swiper .swiper-slide .item_text .tag {
   letter-spacing: -0.02rem;
   background: #EEE;
   color: #000;
-  padding: 5px 10px;
+  padding: 4px;
   display: inline-block;
 }
 main #new_item .new_more_view {
   text-align: center;
 }
-main #new_item .new_more_view button {
+main #new_item .new_more_view a {
+  display: inline-block;
   border: 1px solid #C7C7C7;
   border-radius: 30px;
   padding: 10px 20px;
 }
-main #new_item .new_more_view button:hover {
+main #new_item .new_more_view a:hover {
   background: #333;
   color: #FFF;
 }
@@ -675,9 +694,7 @@ main #camp .camp_right {
 main #camp .camp_right .camp_category_text .category {
   display: flex;
   flex-flow: column wrap;
-  align-items: left;
-  gap: 40px;
-  margin-bottom: 10px;
+  gap: 50px;
 }
 main #camp .camp_right .camp_category_text .category .camp_category_top {
   display: flex;

@@ -1,3 +1,9 @@
+const aTag = document.querySelectorAll('a[href="#"]');
+aTag.forEach(tag => {
+    tag.addEventListener('click', (e) => {
+        e.preventDefault(); // ← 기본 동작(맨 위로 이동) 막기
+    });
+});
 /****************헤더 스크롤 배경변경**************/
 const header = document.querySelector('header');
 window.addEventListener('scroll', () => {

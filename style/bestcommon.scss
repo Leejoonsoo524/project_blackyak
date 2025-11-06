@@ -27,8 +27,7 @@ header {
         justify-content: center;
         height: 100%;
         .product {
-            display: flex;
-            gap: 40px;
+            display: flex;            
             height: 100%;            
             > li {                    
                 height: 100%;                    
@@ -38,6 +37,7 @@ header {
                     font-weight: 500; 
                     height: 100%;      
                     display: flex;
+                    padding: 0 20px;
                     align-items: center;                            
                     &:hover {
                         color: $color_light_gray;

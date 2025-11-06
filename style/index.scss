@@ -130,9 +130,10 @@ main {
         }
         /* 슬라이드 영역 */
         .best_product_list{
+            margin-bottom: 25px;        
             .swiper {
                 .swiper-wrapper {
-                display: flex;            
+                display: flex;    
                 }
                 .swiper-slide {            
                     a {
@@ -167,6 +168,20 @@ main {
                             @include product_tag_font;                    
                         }
                     }
+                }
+            }
+        }
+
+        .best_more_view{
+            text-align: center;
+            a{            
+                display: inline-block;
+                border: 1px solid $color_light_gray;
+                border-radius: 30px;
+                padding: 10px 20px;
+                &:hover{
+                    background: $header_search_color;            
+                    color: $color_white;
                 }
             }
         }
@@ -253,11 +268,11 @@ main {
             }
         }
         /* 슬라이드 영역 */
-        .new_product_list{
+        .new_product_list{           
+            margin-bottom: 25px;        
             .swiper {
                 .swiper-wrapper {
-                display: flex;      
-                margin-bottom: 25px;      
+                display: flex;                        
                 }
                 .swiper-slide {            
                     a {
@@ -297,7 +312,8 @@ main {
         }
         .new_more_view{
             text-align: center;
-            button{            
+            a{            
+                display: inline-block;
                 border: 1px solid $color_light_gray;
                 border-radius: 30px;
                 padding: 10px 20px;
@@ -344,10 +360,8 @@ main {
             .camp_category_text{            
                 .category {
                     display: flex;
-                    flex-flow: column wrap;
-                    align-items: left;                    
-                    gap: 40px;
-                    margin-bottom: 10px;                
+                    flex-flow: column wrap;                    
+                    gap: 50px;                    
                     .camp_category_top {
                         display: flex;
                         flex-flow: column wrap;
