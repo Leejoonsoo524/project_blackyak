@@ -108,11 +108,11 @@ const bestSwiperId = [
     ];
 const bestHoverImg = {
     best_item_slide: [
+        './best_item/md_product5_hover.png',
         './best_item/md_product1_hover.png',
-        './best_item/md_product2_hover.png',
         './best_item/md_product3_hover.png',
         './best_item/md_product4_hover.png',
-        './best_item/md_product5_hover.png',
+        './best_item/md_product2_hover.png',
     ],
     top_item_slide: [
         './best_item/top_product1_hover.png',

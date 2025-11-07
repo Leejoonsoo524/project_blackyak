@@ -219,7 +219,6 @@ const productColorImg = {
             black: './best_product_img/bestproduct37.png',
             astro: './best_product_img/bestproduct37_2.png',
         },
-
     ],
     public: [
         {

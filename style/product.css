@@ -1,0 +1,283 @@
+header {
+  min-width: 1920px;
+  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 120px;
+  color: #F1F1F1;
+  z-index: 100;
+  background-color: #0A0F14;
+}
+header .main_logo a {
+  display: block;
+}
+header nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+header nav .product {
+  display: flex;
+  height: 100%;
+}
+header nav .product > li {
+  height: 100%;
+}
+header nav .product > li > a {
+  color: #F1F1F1;
+  font-size: 16px;
+  font-weight: 500;
+  height: 100%;
+  display: flex;
+  padding: 0 20px;
+  align-items: center;
+}
+header nav .product > li > a:hover {
+  color: #C7C7C7;
+}
+header nav .product > li .lnb {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: #0A0F14;
+  top: 80px;
+  left: 0;
+  z-index: 50;
+  padding: 60px 120px;
+}
+header nav .product > li .lnb .lnb_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+header nav .product > li .lnb .lnb_inner .lnb_category {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 120px;
+}
+header nav .product > li .lnb .lnb_inner .lnb_category > li {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  gap: 15px;
+}
+header nav .product > li .lnb .lnb_inner .lnb_category > li > a {
+  width: 100%;
+  display: block;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #FFF;
+  letter-spacing: -0.02rem;
+}
+header nav .product > li .lnb .lnb_inner .lnb_category > li .item {
+  display: flex;
+  flex-flow: column wrap;
+}
+header nav .product > li .lnb .lnb_inner .lnb_category > li .item a {
+  display: block;
+  width: 120px;
+  padding-bottom: 15px;
+  font-size: 0.813rem;
+  font-weight: 400;
+  color: #B2B2B2;
+  letter-spacing: -0.02rem;
+}
+header nav .product > li .lnb .lnb_inner .lnb_category > li .item a:hover {
+  opacity: 0.7;
+}
+header nav .product > li .lnb .lnb_inner .lnb_category > .row_category {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  gap: 100px;
+}
+header nav .product > li:hover .lnb {
+  display: block;
+}
+header .right_menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+header .right_menu .search_box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+header .right_menu .search_box form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .right_menu .search_box form img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+header .right_menu .search_box form .search:hover {
+  opacity: 0.5;
+}
+header .right_menu .search_box form .close:hover {
+  opacity: 0.5;
+}
+header .right_menu .search_box form .search_input input {
+  color: #F1F1F1;
+  background-color: #333;
+  font-size: 14px;
+}
+header .right_menu .search_box form .search_input input::placeholder {
+  font-size: 14px;
+  color: #666;
+}
+header .right_menu .user_menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header .right_menu .user_menu li a {
+  display: block;
+}
+header .right_menu .user_menu li a img {
+  width: 22px;
+  height: 22px;
+}
+header .right_menu .user_menu li a img:hover {
+  opacity: 0.5;
+}
+
+#footer_bg {
+  width: 100%;
+  background: #F0F0F0;
+}
+#footer_bg footer {
+  width: 1680px;
+  margin: 0 auto;
+  padding: 80px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#footer_bg footer .footer_left {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+}
+#footer_bg footer .footer_left .main_logo img {
+  display: block;
+}
+#footer_bg footer .footer_left .footer_nav {
+  display: flex;
+  flex-flow: row nowrap;
+}
+#footer_bg footer .footer_left .footer_nav li {
+  position: relative;
+  margin-right: 25px;
+}
+#footer_bg footer .footer_left .footer_nav li a {
+  font-size: 0.938rem;
+  font-weight: 400;
+  letter-spacing: -0.02rem;
+}
+#footer_bg footer .footer_left .footer_nav li + li::before {
+  content: "";
+  position: absolute;
+  left: -12.5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 12px;
+  background-color: #ccc;
+}
+#footer_bg footer .footer_left .info {
+  display: flex;
+  flex-wrap: wrap;
+}
+#footer_bg footer .footer_left .info li {
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: -0.02rem;
+  color: #555;
+  margin-right: 20px;
+  position: relative;
+}
+#footer_bg footer .footer_left .info li a {
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: -0.02rem;
+  color: #555;
+}
+#footer_bg footer .footer_left .info li button {
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: -0.02rem;
+  color: #555;
+  cursor: pointer;
+}
+#footer_bg footer .footer_left .info li + li::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 12px;
+  background-color: #ccc;
+}
+#footer_bg footer .footer_left .copy {
+  font-size: 0.813rem;
+  font-weight: 400;
+  letter-spacing: -0.02rem;
+  color: #555;
+}
+#footer_bg footer .footer_right {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 25px;
+  text-align: left;
+}
+#footer_bg footer .footer_right .call_center p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: -0.02rem;
+}
+#footer_bg footer .footer_right .call_center_time p {
+  font-size: 0.813rem;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.02rem;
+}
+#footer_bg footer .footer_right .call_center_icon {
+  display: flex;
+  justify-content: space-between;
+}
+#footer_bg footer .footer_right .call_center_icon div a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: -0.02rem;
+}
+#footer_bg footer .footer_right .call_center_icon div a img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+main {
+  margin-top: 80px;
+}
+
+/*# sourceMappingURL=product.css.map */
