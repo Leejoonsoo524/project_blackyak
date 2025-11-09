@@ -1,0 +1,16 @@
+main {
+  margin-top: 80px;
+}
+main #product_info {
+  width: 1680px;
+  margin: 0 auto;
+  display: flex;
+}
+main #product_info .user_check p {
+  font-size: 0.813rem;
+  font-weight: 400;
+  color: #B2B2B2;
+  letter-spacing: -0.02rem;
+}
+
+/*# sourceMappingURL=productmain.css.map */

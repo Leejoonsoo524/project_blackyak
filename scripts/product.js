@@ -33,3 +33,63 @@ itemHover.forEach(item => {
         if (titleFont) titleFont.style.textDecoration = 'none';
     })
 })
+/**************메인 컬러선택 테투리+이름**********/
+const colorSelcet = document.querySelectorAll('.color_img button');
+const colorTag = document.querySelectorAll('.color_tag span');
+const orderColor = document.querySelector('.order_color_size .order_color');
+const orderSize = document.querySelector('.order_color_size .order_size');
+colorSelcet.forEach((btn) => {
+    btn.addEventListener('click', () =>{
+        colorSelcet.forEach((i) => i.classList.remove('active'));  
+        colorTag.forEach((i) => i.classList.remove('active'));   
+
+        btn.classList.add('active');
+
+        colorTag.forEach((color) => {
+            if (btn.classList.contains('blue') && color.classList.contains('blue')) 
+            {                   //contains는 클래스 이름중에 해당 이름이 있으면 1을 반환 없으면 0을반환
+                color.classList.add('active');
+                orderColor.textContent = color.textContent;
+            } 
+            else if (btn.classList.contains('gold') && color.classList.contains('gold')) {
+                color.classList.add('active');
+                orderColor.textContent = color.textContent;
+            } 
+            else if (btn.classList.contains('brown') && color.classList.contains('brown')) {
+                color.classList.add('active');
+                orderColor.textContent = color.textContent;
+            } 
+            else if (btn.classList.contains('khaki') && color.classList.contains('khaki')) {
+                color.classList.add('active');
+                orderColor.textContent = color.textContent;
+            }
+        });
+    });
+});
+
+/**************메인 사이즈선택 active************/
+const sizeSelcet = document.querySelectorAll('.size_btn button');
+const orderInfo = document.querySelector('.order_info');
+sizeSelcet.forEach((btn) => {
+    btn.addEventListener('click', () =>{
+        sizeSelcet.forEach((i) => i.classList.remove('active'));  
+        btn.classList.add('active');       
+        orderSize.textContent = btn.textContent; 
+        
+        if (btn.classList.contains('active'))   orderInfo.style.display = 'flex';        
+        else                                    orderInfo.style.display = 'none';
+
+    });
+});
+
+
+/**************메인 사이즈선택 active************/
+const tapBtn = document.querySelectorAll('#tap .tap_btn button');
+
+tapBtn.forEach((btn) => {
+    btn.addEventListener('click', () =>{
+        tapBtn.forEach((i) => i.classList.remove('active'));  
+        btn.classList.add('active');                       
+
+    });
+});

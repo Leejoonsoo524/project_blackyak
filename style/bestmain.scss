@@ -1,6 +1,5 @@
 @use './variable.scss' as *;
 main{
-    width: 100%;
     min-width: 1920px;
     margin-top: $header_height;    
     #banner{
@@ -118,8 +117,7 @@ main{
                                     &.silver_beige{background: #C8BEBC;}
                                     &.L_blue{background: #272F44;}
                                     &.purple{background: #5C50B9;}
-                                }
-                                
+                                }                                
                             }
                         }                        
                     }

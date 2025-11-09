@@ -14,6 +14,14 @@ $footer_color:#F0F0F0;
     font-weight: 700;
     letter-spacing: -0.02rem;
 }
+
+@mixin review_dd{
+    //26px Regular
+    font-size:1.5rem;
+    font-weight: 400;
+    letter-spacing: -0.02rem;
+}
+
 @mixin product_font_M{
     //25px Bold
     font-size:1.563rem;
@@ -28,6 +36,13 @@ $footer_color:#F0F0F0;
     letter-spacing: -0.02rem;
 }
 
+@mixin product_review_t{
+    //20px Regular
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: -0.02rem;
+}
+
 @mixin header_sub_menu_title{
     //18px Semibold
     font-size: 1.125rem;
@@ -35,6 +50,7 @@ $footer_color:#F0F0F0;
     color: $color_white;
     letter-spacing: -0.02rem;
 }
+
 @mixin product_find_h{
     //18px Regular
     font-size: 1.125rem;
@@ -42,6 +58,19 @@ $footer_color:#F0F0F0;
     letter-spacing: -0.02rem;
 }
 
+@mixin review_dt{
+    //17px Regular
+    font-size:1.0625rem;
+    font-weight: 400;
+    letter-spacing: -0.02rem;
+}
+
+@mixin order_total{
+    //16px Regular
+    font-size:1rem;
+    font-weight: 400;
+    letter-spacing: -0.02rem;
+}
 @mixin product_category_font{
     //15px Regular
     font-size:0.938rem;

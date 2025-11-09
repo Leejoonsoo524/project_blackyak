@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
     <title>공용 클라이밍 스톤마스터 다운자켓#3</title>
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/product.css">    
-    <script src="./scripts/bestproduct.js" defer></script>
+    <script src="./scripts/product.js" defer></script>
 
 </head>
 <body>
@@ -22,7 +22,7 @@
         <!-- 헤더 메뉴 -->
         <nav>
             <ul class="product">
-                <li><a href="#">BEST</a></li>
+                <li><a href="./bestproduct.html">BEST</a></li>
                 <li><a href="#">NEW</a></li>
                 <li class="man_lnb"><a href="#">남성</a>
                     <div class="lnb">
@@ -264,93 +264,286 @@
     </header>
 
     <main>
-        <div class="main_img">
-            <img src="./product_detail/detail1.png" alt="모델피팅사진">
-            <img src="./product_detail/detail1_front.png" alt="제품정면사진">
-        </div>
-        <div class="user_check">
-            <!-- 제품번호 ~ 상품명 -->
-            <span>1BYPAWU902MD</span> <!-- 블럭태그로 수정 -->
-            <h3>공용 클라이밍 스톤마스터 다운자켓#3</h3>
-            <!-- 리뷰포인트 ~ 컬러선택 -->
-            <div class="review_point_color">
-                <!-- 리뷰별점 부분 -->
-                <div class="review_point">
-                    <a href="#">
-                    <img src="./product_detail/star.png" alt="별점">
-                    5.0 (15건)
-                </a>
+        <section id="product_info">
+            <div class="main_img">
+                <img src="./product_detail/detail1.png" alt="모델피팅사진">
+                <img src="./product_detail/detail1_front.png" alt="제품정면사진">
+            </div>
+            <div class="user_check">
+                <!-- 제품번호 ~ 상품명 -->
+                <p class="product_id">1BYPAWU902MD</p> <!-- 블럭태그로 수정 -->
+                <h3>공용 클라이밍 스톤마스터 다운자켓#3</h3>
+                <!-- 리뷰포인트 ~ 컬러선택 -->
+                <div class="review_point_color">
+                    <!-- 리뷰별점 부분 -->
+                    <div class="review_point">
+                        <a href="#">
+                            <img src="./product_detail/star.png" alt="별점">
+                            5.0 (15건)
+                        </a>
+                    </div>
+    
+                    <!-- 배송비 ~ 적립금 dl->dt->dd-->
+                    <dl class="price_box">
+                        <div class="delivery">
+                            <dt>배송비</dt>
+                            <dd>3만원 이상 구매시 무료배송</dd>
+                        </div>
+                        <div class="normal">
+                            <dt>정상가</dt>
+                            <dd><del>₩359,000</del></dd>
+                        </div>
+                        <div class="dc">
+                            <dt>할인가</dt>
+                            <div class="price">
+                                <dd class="dc_price">₩289,000</dd>
+                                <dd class="dc_off">16%</dd>
+                            </div>
+                        </div>
+                        <div class="save">
+                            <dt>적립금</dt>
+                            <dd>8,670P</dd>
+                        </div>
+                    </dl>
+    
+                    <!-- 컬러 선택 박스 -->
+                    <div class="color_point">
+                        <div class="color_tag">
+                            <strong>COLOR</strong>
+                            <span class="color blue active">URBAN BLUE</span>
+                            <span class="color gold">MARIGOLD</span>
+                            <span class="color brown">D/BROWN</span>
+                            <span class="color khaki">KHAKI</span>
+                        </div>
+                        <div class="color_img">
+                            <button type="button" class="blue active"><img src="./product_detail/detail1_mini_front.png"
+                                    alt="작은제품사진"></button>
+                            <button type="button" class="gold"><img src="./product_detail/detail2_mini_front.png"
+                                    alt="작은제품사진"></button>
+                            <button type="button" class="brown"><img src="./product_detail/detail3_mini_front.png"
+                                    alt="작은제품사진"></button>
+                            <button type="button" class="khaki"><img src="./product_detail/detail4_mini_front.png"
+                                    alt="작은제품사진"></button>
+                        </div>
+                    </div>
                 </div>
-
-                <!-- 배송비 ~ 적립금 dl->dt->dd-->
-                <div class="price_box">
-                    <div class="delivery">
-                        <strong>배송비</strong>
-                        <span class="text">3만원 이상 구매시 무료배송</span>                                                        
+                <!-- 사이즈 선택 -->
+                <div class="size_box">
+                    <div class="size_text"><strong>SIZE</strong></div>
+                    <ul class="size_btn">
+                        <li><button type="button" class="size_90">90</button></li>
+                        <li><button type="button" class="size_95">95</button></li>
+                        <li><button type="button" class="size_100">100</button></li>
+                        <li><button type="button" class="size_105">105</button></li>
+                        <li><button type="button" class="size_110">110</button></li>
+                        <li><button type="button" class="size_115">115</button></li>
+                    </ul>
+                </div>
+                <!-- 선택 항목 표시 -->
+                <div class="order_info">
+                    <div class="order_color_size">
+                        <span class="order_color">URBAN BLUE</span>
+                        <span>/</span>
+                        <span class="order_size">100</span>
                     </div>
-                    <div class="normal">
-                        <strong>정상가</strong>
-                        <del class="normal_price">₩359,000</del>                         
-                    </div>
-                    <div class="dc">
-                        <strong>할인가</strong>
-                        <span class="dc_price">499,000</span>
-                        <em class="dc_off">16%</em>
-                    </div>
-                    <div class="save">
-                        <strong>적립금</strong>
-                        <span class="save_point">8,670P</span>                   
+                    <div class="count_total">
+                        <div class="order_count">
+                            <button type="button" class="minus">-</button>
+                            <input type="text" name="count" id="count" value="1" min="1" maxlength='3'>
+                            <button type="button" class="plus">+</button>
+                        </div>
+                        <p class="total">289,000<em>원</em></p>
                     </div>
                 </div>
+                <!-- 장바구니 구매하기 버튼 -->
+    
+                <div class="shopping_btn">
+                    <button type="button" class="cart">장바구니</button>
+                    <button type="button" class="buy">구매하기</button>
+                </div>    
+            </div>
+        </section>
 
-                <!-- 컬러 선택 박스 -->
-                <div class="color_point">
-                    <div class="color_tag">
-                        <strong>COLOR</strong>
-                        <span class="color blue">URBAN BLUE</span>
-                        <span class="color gold">MARIGOLD</span>
-                        <span class="color brown">D/BROWN</span>
-                        <span class="color khaki">KHAKI</span>
-                    </div>
-                    <div class="color_img">
-                        <button type="button" class="blue"><img src="./product_detail/detail1_mini_front.png" alt="작은제품사진"></button>
-                        <button type="button" class="gold"><img src="./product_detail/detail2_mini_front.png" alt="작은제품사진"></button>
-                        <button type="button" class="brown"><img src="./product_detail/detail3_mini_front.png" alt="작은제품사진"></button>
-                        <button type="button" class="khaki"><img src="./product_detail/detail4_mini_front.png" alt="작은제품사진"></button>                        
-                    </div>
+        <div id="tap">
+            <ul class="tap_btn">
+                <li><button type="button" class="active">상세정보</button></li>
+                <li><button type="button">리뷰</button></li>
+                <li><button type="button">반품/교환정보</button></li>
+            </ul>
+        </div>      
+        
+        <section id="product_document">
+            <div class="product_detail">
+                <h3 class="detail_name">공용 클라이밍 스톤마스터 다운자켓#3 KH</h3>
+
+                <p class="product_introduction">
+                    [클라이밍 공용 스톤마스터 다운자켓] <br>
+                    후디 일체형의 미들급 다운으로 경량 소재와 벌키한 RDS 덕다운 90/10 충전재로 경량화에 집중한 공용다운자켓입니다.<br>
+                    트렌디한 디자인과 네추럴 컬러로 어느 착장에나 잘 어울리는 컬러톤 구성입니다.<br>
+                    소매에 bcc라인의 심볼 로고가 들어가 있으며, 양방향지퍼 사용으로 다양한 코디가 가능합니다.<br>
+                    패커블 주머니가 제공되어 패커블이 가능합니다.<br>
+                    <br>
+                    [기능성]<br>
+                    옷의 안감에 폴리진 처리를 하여, 땀 혹은 습기로 인한 박테리아 발생 가능성을 원천 차단 해줍니다.<br>
+                    박테리아 발생으로 인한 오염 및 악취 발생을 근본적으로 막는 기술로, 타브랜드 다운들과 차별화 되는 기능입니다.<br>
+                    <br>
+                    [안심주머니]<br>
+                    페트병을 재활용한 친환경 원사에 항균 기능을 더한 ‘안심 주머니’를 적용해 위생적인 사용이 가능합니다.<br>
+                    <br>
+                    ▶ 기능성 : 폴리진 오더크런치, 안심주머니
+                </p>
+
+                <div class="label">
+                <img src="./product_detail/label.png" alt="정품확인라벨">
                 </div>
             </div>
-            <!-- 사이즈 선택 -->
-            <div class="size_box">
-                <div class="size_text"><strong>SIZE</strong></div>                
-                <ul class="size_btn">
-                    <li><button type="button" class="size_90">90</button></li>
-                    <li><button type="button" class="size_95">95</button></li>                
-                    <li><button type="button" class="size_100">100</button></li>
-                    <li><button type="button" class="size_105">105</button></li>
-                    <li><button type="button" class="size_110">110</button></li>
-                    <li><button type="button" class="size_115">115</button></li>
+
+            <div class="detail_main">
+                <div class="product1">                            
+                    <img src="./product_detail/main_detail_model.png" alt="상품이미지">
+                </div>             
+                <div class="product2">
+                    <img src="./product_detail/main_detail_front.png" alt="상품이미지">                                                       
+                    <h5>FORNT</h5>
+                </div>
+                <div class="product2">
+                    <img src="./product_detail/main_detail_back.png" alt="상품이미지">                                                       
+                    <h5>BACK</h5>
+                </div>
+            </div>
+
+            <div class="detail_img">
+                <h3>DETAIL VIEW</h3>
+                <ul class="detail_list">                
+                    <li><img src="./product_detail/main_detail1.png" alt="제품상세1"></li>
+                    <li><img src="./product_detail/main_detail2.png" alt="제품상세2"></li>
+                    <li><img src="./product_detail/main_detail3.png" alt="제품상세3"></li>
+                    <li><img src="./product_detail/main_detail4.png" alt="제품상세4"></li>
+                    <li><img src="./product_detail/main_detail5.png" alt="제품상세5"></li>
+                    <li><img src="./product_detail/main_detail6.png" alt="제품상세6"></li>
+                    <li><img src="./product_detail/main_detail7.png" alt="제품상세7"></li>
+                    <li><img src="./product_detail/main_detail8.png" alt="제품상세8"></li>
+                    <li><img src="./product_detail/main_detail9.png" alt="제품상세9"></li>
+                </ul>
+            </div>            
+        </section>
+
+        <section id="review">
+            <div class="review_box">
+                <h3>리뷰</h3>
+            </div>
+
+            <div class="review_point">
+                <dl class="review_left">
+                    <dt>고객만족도</dt>
+                    <dd>                            
+                        <p>
+                            <img src="./product_detail/review_point_star.png" alt="">
+                            <span class="point">5.0</span>
+                            <em>/</em>
+                            <span class="point_total">5</span>
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="review_right">
+                    <dt>리뷰횟수</dt>
+                    <dd>
+                        15
+                    </dd>
+                </dl>
+            </div>
+            
+            <div class="review_img">
+                <div class="review_img_title">
+                    <span>포토리뷰</span>
+                    <button type="button">전체리뷰보기</button>
+                    
+                </div>
+                <ul class="review_photo">
+                    <li><img src="./product_detail/review_1.png" alt="리뷰이미지1"></li>
+                    <li><img src="./product_detail/review_2.png" alt="리뷰이미지2"></li>
+                    <li><img src="./product_detail/review_3.png" alt="리뷰이미지3"></li>
+                    <li><img src="./product_detail/review_4.png" alt="리뷰이미지4"></li>
+                    <li><img src="./product_detail/review_5.png" alt="리뷰이미지5"></li>
+                    <li><img src="./product_detail/review_6.png" alt="리뷰이미지6"></li>
+                    <li><img src="./product_detail/review_1.png" alt="리뷰이미지7"></li>
+                    <li><img src="./product_detail/review_2.png" alt="리뷰이미지8"></li>
+                    <li><img src="./product_detail/review_3.png" alt="리뷰이미지9"></li>
                 </ul>
             </div>
-            <!-- 선택 항목 표시 -->
-            <div class="check_info">
-                <div class="check_color_size">
-                    <span class="order_color">URBAN BLUE</span><span>/</span><span class="order_size">100</span>
+
+            <div class="review_text">
+                <div class="review_text_title">
+                    <span>최근리뷰</span>                    
                 </div>
-                <div class="id">
-                    <button type="button" class="minus">-</button>
-                    <input type="text" name="count" id="count" value="1">
-                    <button type="button" class="plus">+</button>
-                </div>
-                <p class="total">289,000<em>원</em></p>
-            </div>
-            <!-- 장바구니 구매하기 버튼 -->
-            
-            <div class="Shopping_btn">
-                <button type="button" class="cart">장바구니</button>
-                <button type="button" class="buy">구매하기</button>
+                <ul class="review_text_box">
+                    <li>
+                        <div class="review_detail detail1">
+                            <p>
+                                가볍고 부드러운 원단을 사용해서 입는 순간 엄청 포근합니다.<br>
+                                너무 두껍지도않고, 너무 얇지도 않아서 올겨울은 이걸로 충분히 날수 있을것 같습니다.<br>
+                                고가 제품들은 5~60만원대에 비교해도 가성비가 좋아서 만족합니다.<br>
+                            </p>
+                        </div>
+                        <div class="review_user">
+                            <p class="review_star_point">
+                                <img src="./product_detail/star.png" alt="별점1">
+                                <img src="./product_detail/star.png" alt="별점2">
+                                <img src="./product_detail/star.png" alt="별점3">
+                                <img src="./product_detail/star.png" alt="별점4">
+                                <img src="./product_detail/star.png" alt="별점5">
+                            </p>
+                            <span>김**</span>
+                            <em>2025/01/01</em>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="review_detail detail2">
+                            <p>
+                                따뜻하고 디자인도 이뻐서 데일리로 출근할때도 자주 입고있어요 ㅎㅎ 무조건 추천해요!! 
+                                사이즈는 꼭 입어보고 사시는거 추천드려요
+                            </p>
+                        </div>
+                        <div class="review_user">
+                            <p class="review_star_point">
+                                <img src="./product_detail/star.png" alt="별점1">
+                                <img src="./product_detail/star.png" alt="별점2">
+                                <img src="./product_detail/star.png" alt="별점3">
+                                <img src="./product_detail/star.png" alt="별점4">
+                                <img src="./product_detail/star.png" alt="별점5">
+                            </p>
+                            <span>이**</span>
+                            <em>2025/01/10</em>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="review_detail detail3">
+                            <p>
+                                90은 잠그면 좀 타이트해서 95샀어요.<br>
+                                컬러도 이쁘고 다운도 빵빵하게 들어가서 따뜻해요~
+                            </p>
+                        </div>
+                        <div class="review_user">
+                            <p class="review_star_point">
+                                <img src="./product_detail/star.png" alt="별점1">
+                                <img src="./product_detail/star.png" alt="별점2">
+                                <img src="./product_detail/star.png" alt="별점3">
+                                <img src="./product_detail/star.png" alt="별점4">
+                                <img src="./product_detail/star.png" alt="별점5">
+                            </p>
+                            <span>박**</span>
+                            <em>2025/02/02</em>
+                        </div>
+                    </li>
+                    
+                </ul>
             </div>
 
+            
+        </section>
+
+        <div id="exchang">
+            <img src="./product_detail/exchange.png" alt="교환_환불이미지">
         </div>
     </main>
 
