@@ -1,6 +1,6 @@
 @use './variable.scss' as *;
 main {   
-    min-width: 1920px;
+    width: 100%;
     /**********************메인 1행 배너 START****************************/    
     #main_banner {
         width: 100%;
@@ -498,5 +498,112 @@ main {
         }
     }
     /**********************메인 8행 FIND_location END*********************/
+}
 
+
+/* 1024px 이하 (태블릿) -----------------------------------*/
+@media (max-width: 1199px) {
+    /* 메인 컨테이너 폭 축소 */
+    main #best_item,
+    main #new_item,
+    main #camp,
+    main #find_location {
+        width: 90%;
+        margin: 60px auto;
+    }
+
+    /* BEST / NEW 상품 4 → 2열 */
+    .swiper-slide {
+        width: calc(50% - 10px) !important;
+    }
+
+    /* 캠핑 4 → 2열 */
+    #camp .camp_product {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        > div {
+            width: calc(50% - 10px);
+        }
+    }
+
+    /* FIND LOCATION (3 → 2열) */
+    #find_location {
+        flex-wrap: wrap;
+
+        .location {
+            width: calc(50% - 20px);
+        }
+    }
+}
+
+
+/* 768px 이하 (모바일) -----------------------------------*/
+@media (max-width: 767px) {
+    /* 배너 텍스트 축소 */
+    #main_banner .banner_text h3 {
+        font-size: 28px;
+    }
+    #main_banner .banner_text p {
+        font-size: 14px;
+    }
+    /* 메인 콘텐츠 폭 */
+    main #best_item,
+    main #new_item,
+    main #camp,
+    main #find_location {
+        width: 95%;
+        margin: 40px auto;
+    }
+
+    #best_item {        
+        h3 {
+            font-size: 22px;    // 섹션 타이틀
+        }
+
+        .best_product_list {
+            .swiper-slide {
+                .item_text {
+                    h5 {
+                        font-size: 14px;    // 상품명 폰트 줄임
+                        line-height: 130%;
+                    }
+                    .price {
+                        .dc_price {
+                            font-size: 16px;  // 판매가
+                        }
+                        .normal_price {
+                            font-size: 12px;  // 정상가
+                        }
+                        .dc_off {
+                            font-size: 12px;  // 할인율
+                        }
+                    }
+                    .tag {
+                        font-size: 11px;  // 태그 폰트 줄임
+                    }
+                }
+            }
+        }
+    }
+
+    /* 상품 슬라이드 2열 유지 */
+    .swiper-slide {
+        width: calc(50% - 8px) !important;
+    }
+
+    /* 캠핑 영역 2열 유지 */
+    #camp .camp_product > div {
+        width: calc(50% - 10px);
+    }
+
+    /* FIND LOCATION (2 → 1열) */
+    #find_location {
+        flex-direction: column;
+        gap: 30px;
+
+        .location {
+            width: 100%;
+        }
+    }
 }

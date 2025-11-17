@@ -1,6 +1,6 @@
 @charset "UTF-8";
 header {
-  min-width: 1920px;
+  width: 100%;
   position: relative;
   position: fixed;
   top: 0;
@@ -21,7 +21,6 @@ header .main_logo a {
   display: block;
 }
 header nav {
-  flex: 1;
   display: flex;
   justify-content: center;
   height: 100%;
@@ -279,8 +278,250 @@ header .right_menu .user_menu li a img:hover {
   margin-bottom: 10px;
 }
 
+/********************************************************************/
+/* -------------------------------------------------- */
+/* 1024px 이하 – 태블릿 */
+/* -------------------------------------------------- */
+@media screen and (max-width: 1024px) {
+  header {
+    padding: 0 40px;
+  }
+  header .main_logo img {
+    width: 120px;
+  }
+  header nav {
+    display: flex;
+  }
+  header nav .product > li > a {
+    font-size: 14px;
+    padding: 0 14px;
+  }
+  header nav .product > li .lnb {
+    position: absolute;
+    width: 100%;
+    background-color: #0A0F14;
+    top: 80px;
+    left: 0;
+    z-index: 50;
+    padding: 30px 40px;
+  }
+  header nav .product > li .lnb .lnb_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  header nav .product > li .lnb .lnb_inner .lnb_category {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  header nav .product > li .lnb .lnb_inner .lnb_category > li {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  header nav .product > li .lnb .lnb_inner .lnb_category > li > a {
+    width: 100%;
+    display: block;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #FFF;
+    letter-spacing: -0.02rem;
+    font-size: 14px;
+  }
+  header nav .product > li .lnb .lnb_inner .lnb_category > li .item {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  header nav .product > li .lnb .lnb_inner .lnb_category > li .item a {
+    display: block;
+    width: 80px;
+    padding-bottom: 15px;
+    font-size: 0.813rem;
+    font-weight: 400;
+    color: #B2B2B2;
+    letter-spacing: -0.02rem;
+    font-size: 12px;
+  }
+  header nav .product > li .lnb .lnb_inner .lnb_category > li .item a:hover {
+    opacity: 0.7;
+  }
+  header nav .product > li .lnb .lnb_inner .lnb_category > .row_category {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    gap: 100px;
+  }
+  header nav .product > li .lnb .lnb_inner .lnb_thumb img {
+    display: none;
+  }
+  header .right_menu {
+    gap: 10px;
+  }
+  header .right_menu .search_box {
+    display: none;
+    padding: 8px 16px;
+  }
+  header .right_menu .search_box form img {
+    width: 18px;
+    height: 18px;
+  }
+  header .right_menu .search_box form .search_input input {
+    font-size: 13px;
+  }
+  header .right_menu .user_menu li a img {
+    width: 20px;
+    height: 20px;
+  }
+}
+/* -------------------------------------------------- */
+/* 768px 이하 – 모바일 */
+/* -------------------------------------------------- */
+@media screen and (max-width: 767px) {
+  header {
+    padding: 0 20px;
+    /* 메뉴 글씨 더 줄임 */
+  }
+  header nav .product > li > a {
+    font-size: 12px;
+    padding: 0 8px;
+  }
+  header .right_menu {
+    gap: 10px;
+  }
+  header .right_menu .search_box {
+    padding: 6px 12px;
+  }
+  header .right_menu .search_box form {
+    gap: 6px;
+  }
+  header .right_menu .search_box form img {
+    width: 16px;
+    height: 16px;
+  }
+  header .right_menu .search_box form .search_input input {
+    display: none;
+    font-size: 12px;
+    width: 80px;
+  }
+  header .right_menu .user_menu li a img {
+    width: 18px;
+    height: 18px;
+  }
+}
+/* -------------------------------------------------- */
+/* 1024px 이하 – 태블릿 */
+/* -------------------------------------------------- */
+@media screen and (max-width: 1024px) {
+  #footer_bg footer {
+    width: 95%;
+    padding: 60px 0;
+    flex-direction: column;
+    gap: 40px;
+  }
+  #footer_bg footer .footer_left {
+    width: 100%;
+    gap: 16px;
+  }
+  #footer_bg footer .footer_left .footer_nav {
+    flex-wrap: wrap;
+  }
+  #footer_bg footer .footer_left .footer_nav li {
+    margin-right: 15px;
+  }
+  #footer_bg footer .footer_left .footer_nav li + li::before {
+    left: -8px;
+    height: 10px;
+  }
+  #footer_bg footer .footer_left .info {
+    flex-wrap: wrap;
+  }
+  #footer_bg footer .footer_left .info li {
+    margin-right: 14px;
+    font-size: 13px;
+  }
+  #footer_bg footer .footer_left .info li + li::before {
+    left: -8px;
+    height: 10px;
+  }
+  #footer_bg footer .footer_right {
+    width: 100%;
+    gap: 16px;
+  }
+  #footer_bg footer .footer_right .call_center p {
+    font-size: 16px;
+  }
+  #footer_bg footer .footer_right .call_center_time p {
+    font-size: 14px;
+  }
+  #footer_bg footer .footer_right .call_center_icon {
+    gap: 20px;
+  }
+  #footer_bg footer .footer_right .call_center_icon div a img {
+    width: 40px;
+    height: 40px;
+  }
+  #footer_bg footer .footer_right .call_center_icon div a {
+    font-size: 14px;
+  }
+}
+/* -------------------------------------------------- */
+/* 768px 이하 – 모바일 */
+/* -------------------------------------------------- */
+@media screen and (max-width: 767px) {
+  #footer_bg footer {
+    width: 100%;
+    padding: 40px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  #footer_bg footer .footer_left {
+    width: 100%;
+    gap: 14px;
+  }
+  #footer_bg footer .footer_left .footer_nav {
+    flex-wrap: wrap;
+  }
+  #footer_bg footer .footer_left .footer_nav li {
+    margin-right: 10px;
+  }
+  #footer_bg footer .footer_left .footer_nav li a {
+    font-size: 13px;
+  }
+  #footer_bg footer .footer_left .info li {
+    font-size: 12px;
+    margin-right: 10px;
+  }
+  #footer_bg footer .footer_left .copy {
+    font-size: 11px;
+  }
+  #footer_bg footer .footer_right {
+    width: 100%;
+    gap: 14px;
+  }
+  #footer_bg footer .footer_right .call_center p {
+    font-size: 14px;
+  }
+  #footer_bg footer .footer_right .call_center_time p {
+    font-size: 12px;
+  }
+  #footer_bg footer .footer_right .call_center_icon {
+    gap: 14px;
+  }
+  #footer_bg footer .footer_right .call_center_icon div a img {
+    width: 36px;
+    height: 36px;
+  }
+  #footer_bg footer .footer_right .call_center_icon div a {
+    font-size: 12px;
+  }
+}
 main {
-  min-width: 1920px;
+  width: 100%;
   /**********************메인 1행 배너 START****************************/
 }
 main #main_banner {
@@ -846,6 +1087,90 @@ main #find_location .location .find button:hover {
 }
 main {
   /**********************메인 8행 FIND_location END*********************/
+}
+
+/* 1024px 이하 (태블릿) -----------------------------------*/
+@media (max-width: 1199px) {
+  /* 메인 컨테이너 폭 축소 */
+  main #best_item,
+  main #new_item,
+  main #camp,
+  main #find_location {
+    width: 90%;
+    margin: 60px auto;
+  }
+  /* BEST / NEW 상품 4 → 2열 */
+  .swiper-slide {
+    width: calc(50% - 10px) !important;
+  }
+  /* 캠핑 4 → 2열 */
+  #camp .camp_product {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #camp .camp_product > div {
+    width: calc(50% - 10px);
+  }
+  /* FIND LOCATION (3 → 2열) */
+  #find_location {
+    flex-wrap: wrap;
+  }
+  #find_location .location {
+    width: calc(50% - 20px);
+  }
+}
+/* 768px 이하 (모바일) -----------------------------------*/
+@media (max-width: 767px) {
+  /* 배너 텍스트 축소 */
+  #main_banner .banner_text h3 {
+    font-size: 28px;
+  }
+  #main_banner .banner_text p {
+    font-size: 14px;
+  }
+  /* 메인 콘텐츠 폭 */
+  main #best_item,
+  main #new_item,
+  main #camp,
+  main #find_location {
+    width: 95%;
+    margin: 40px auto;
+  }
+  #best_item h3 {
+    font-size: 22px;
+  }
+  #best_item .best_product_list .swiper-slide .item_text h5 {
+    font-size: 14px;
+    line-height: 130%;
+  }
+  #best_item .best_product_list .swiper-slide .item_text .price .dc_price {
+    font-size: 16px;
+  }
+  #best_item .best_product_list .swiper-slide .item_text .price .normal_price {
+    font-size: 12px;
+  }
+  #best_item .best_product_list .swiper-slide .item_text .price .dc_off {
+    font-size: 12px;
+  }
+  #best_item .best_product_list .swiper-slide .item_text .tag {
+    font-size: 11px;
+  }
+  /* 상품 슬라이드 2열 유지 */
+  .swiper-slide {
+    width: calc(50% - 8px) !important;
+  }
+  /* 캠핑 영역 2열 유지 */
+  #camp .camp_product > div {
+    width: calc(50% - 10px);
+  }
+  /* FIND LOCATION (2 → 1열) */
+  #find_location {
+    flex-direction: column;
+    gap: 30px;
+  }
+  #find_location .location {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
