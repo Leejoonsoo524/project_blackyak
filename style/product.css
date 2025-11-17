@@ -50,7 +50,7 @@ header nav .product > li .lnb {
   background-color: #0A0F14;
   top: 80px;
   left: 0;
-  z-index: 50;
+  z-index: 150;
   padding: 60px 120px;
 }
 header nav .product > li .lnb .lnb_inner {
@@ -278,7 +278,7 @@ header .right_menu .user_menu li a img:hover {
 }
 
 main {
-  min-width: 1920px;
+  width: 100%;
   padding-top: 80px;
   /* 상세페이지는 바로 컨텐츠가 시작해서 마진이 겹쳐서 패딩으로 헤더 높이만큼 벌림 */
 }
@@ -514,6 +514,10 @@ main #product_info .shopping_btn button:hover {
 main #tap {
   width: 1680px;
   margin: 0 auto 80px;
+  position: sticky;
+  top: 80px;
+  z-index: 80;
+  background: #fff;
 }
 main #tap .tap_btn {
   display: flex;

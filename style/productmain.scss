@@ -1,6 +1,6 @@
 @use './variable.scss' as *;
 main{       
-    min-width: 1920px;
+    width: 100%;
     padding-top: $header_height;    
     /* 상세페이지는 바로 컨텐츠가 시작해서 마진이 겹쳐서 패딩으로 헤더 높이만큼 벌림 */    
     #product_info{
@@ -168,9 +168,13 @@ main{
 
     #tap {
         width: 1680px;
-        margin: 0 auto 80px;            
+        margin: 0 auto 80px;
+        position: sticky;
+        top: $header_height;
+        z-index: 80;
+        background: #fff;
         .tap_btn {
-            display: flex;                
+            display: flex;              
             li {
                 width: calc(100% / 3);    
                 button {

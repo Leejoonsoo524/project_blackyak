@@ -351,11 +351,3 @@ campProductId.forEach(id => {
         });
     });
 });
-
-/***********메인 NEW ITEM 슬라이드****************/
-/*const newSwiperSet = [
-    { swiperId: 'all_item_slide'  , conId: 'ctrl-all' },
-    { swiperId: 'men_item_slide'  , conId: 'ctrl-men' },
-    { swiperId: 'women_item_slide', conId: 'ctrl-women' },
-    { swiperId: 'dns_item_slide'  , conId: 'ctrl-dns' },    
-];*/
